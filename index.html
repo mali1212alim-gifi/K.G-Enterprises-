@@ -22,6 +22,8 @@
       --blue-primary: #0866B2;
       --green-health: #159447;
       --green-accent: #35C759;
+      --whatsapp-green: #25D366;
+      --whatsapp-dark: #128C7E;
       --white: #FFFFFF;
       --bg-soft-blue: #F2F8FC;
       --grey-neutral: #EAF0F5;
@@ -109,18 +111,6 @@
       padding: 0 1.25rem;
     }
 
-    .sr-only {
-      position: absolute;
-      width: 1px;
-      height: 1px;
-      padding: 0;
-      margin: -1px;
-      overflow: hidden;
-      clip: rect(0, 0, 0, 0);
-      white-space: nowrap;
-      border: 0;
-    }
-
     /* ==========================================================================
        3. TOP DESIGNER CREDIT BAR (ALI GRAPHICS)
        ========================================================================== */
@@ -153,7 +143,7 @@
       display: inline-flex;
       align-items: center;
       gap: 0.3rem;
-      background: rgba(53, 199, 89, 0.16);
+      background: rgba(37, 211, 102, 0.2);
       color: #6ee787;
       padding: 0.1rem 0.45rem;
       border-radius: var(--radius-pill);
@@ -290,15 +280,15 @@
     }
 
     .btn-whatsapp {
-      background: linear-gradient(135deg, var(--green-health) 0%, #0f7a38 100%);
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
       color: var(--white);
-      box-shadow: 0 6px 18px rgba(21, 148, 71, 0.28);
+      box-shadow: 0 6px 18px rgba(37, 211, 102, 0.32);
     }
 
     .btn-whatsapp:hover {
-      background: linear-gradient(135deg, #19ab52 0%, var(--green-health) 100%);
+      background: linear-gradient(135deg, #2be06f 0%, #159447 100%);
       transform: translateY(-2px);
-      box-shadow: 0 10px 24px rgba(21, 148, 71, 0.36);
+      box-shadow: 0 10px 24px rgba(37, 211, 102, 0.44);
     }
 
     .btn-primary {
@@ -428,7 +418,7 @@
       font-size: 1.08rem;
       color: rgba(255, 255, 255, 0.9);
       max-width: 600px;
-      margin-bottom: 1.75rem;
+      margin-bottom: 1.5rem;
       line-height: 1.65;
     }
 
@@ -442,7 +432,7 @@
       border-radius: var(--radius-md);
       font-size: 0.88rem;
       color: var(--white);
-      margin-bottom: 2rem;
+      margin-bottom: 1.75rem;
     }
 
     .hero-location-chip:hover {
@@ -454,6 +444,50 @@
       display: flex;
       flex-wrap: wrap;
       gap: 1rem;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Quick Direct WhatsApp Pills in Hero */
+    .hero-wa-quick-bar {
+      background: rgba(6, 59, 112, 0.45);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: var(--radius-md);
+      padding: 0.9rem 1rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .hero-wa-quick-label {
+      font-size: 0.74rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #98f5ab;
+      font-weight: 800;
+      margin-bottom: 0.55rem;
+      display: block;
+    }
+
+    .hero-wa-quick-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.55rem;
+    }
+
+    .hero-wa-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: var(--white);
+      padding: 0.42rem 0.85rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+    }
+
+    .hero-wa-chip:hover {
+      transform: translateY(-2px);
+      background: linear-gradient(135deg, #2be06f 0%, #159447 100%);
     }
 
     /* Hero Right Visual Composition */
@@ -700,17 +734,10 @@
 
     .category-card-footer {
       display: flex;
-      align-items: center;
-      justify-content: space-between;
+      flex-direction: column;
+      gap: 0.6rem;
       padding-top: 1rem;
       border-top: 1px solid var(--grey-neutral);
-      font-weight: 700;
-      font-size: 0.9rem;
-      color: var(--blue-primary);
-    }
-
-    .category-card:hover .category-card-footer {
-      color: var(--green-health);
     }
 
     /* ==========================================================================
@@ -826,7 +853,7 @@
     }
 
     /* ==========================================================================
-       11. REPRESENTATIVES & LOCATION SECTION
+       11. REPRESENTATIVES & LOCATION SECTION (WITH CLEAR WHATSAPP BUTTONS)
        ========================================================================== */
     .team-grid {
       display: grid;
@@ -838,7 +865,7 @@
     .rep-card {
       background: var(--white);
       border-radius: var(--radius-lg);
-      padding: 2rem 1.75rem;
+      padding: 2rem 1.65rem;
       border: 1px solid var(--border-subtle);
       box-shadow: var(--shadow-sm);
       display: flex;
@@ -846,12 +873,24 @@
       align-items: center;
       text-align: center;
       transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .rep-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, #25D366, var(--blue-primary));
     }
 
     .rep-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-md);
-      border-color: var(--blue-primary);
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+      border-color: #25D366;
     }
 
     .rep-avatar {
@@ -881,24 +920,63 @@
     }
 
     .rep-name {
-      font-size: 1.25rem;
-      font-weight: 800;
+      font-size: 1.28rem;
+      font-weight: 900;
       color: var(--navy-deep);
-      margin-bottom: 1rem;
+      margin-bottom: 0.25rem;
     }
 
+    .rep-number-display {
+      font-size: 1.02rem;
+      font-weight: 800;
+      color: var(--text-muted);
+      margin-bottom: 1.25rem;
+      letter-spacing: 0.02em;
+    }
+
+    .rep-actions-stack {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 0.65rem;
+    }
+
+    /* Prominent WhatsApp Green Clickable Button for Every Representative */
+    .rep-wa-btn {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.82rem 1rem;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 0.95rem;
+      box-shadow: 0 6px 16px rgba(37, 211, 102, 0.32);
+      border: none;
+    }
+
+    .rep-wa-btn:hover {
+      background: linear-gradient(135deg, #2be06f 0%, #0f7a38 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 22px rgba(37, 211, 102, 0.45);
+    }
+
+    /* Direct Call Button */
     .rep-phone-btn {
       width: 100%;
       display: inline-flex;
       align-items: center;
       justify-content: center;
       gap: 0.5rem;
-      padding: 0.75rem 1rem;
+      padding: 0.72rem 1rem;
       border-radius: var(--radius-md);
       background: var(--bg-soft-blue);
       color: var(--navy-deep);
       font-weight: 800;
-      font-size: 1rem;
+      font-size: 0.92rem;
       border: 1px solid var(--border-subtle);
     }
 
@@ -1085,7 +1163,7 @@
     }
 
     /* ==========================================================================
-       13. MODAL FOR PRODUCT DETAILS & WHATSAPP CONFIGURATION
+       13. MODAL FOR PRODUCT DETAILS & 3-REPRESENTATIVE WHATSAPP SELECTION
        ========================================================================== */
     .modal-backdrop {
       position: fixed;
@@ -1110,10 +1188,11 @@
     .modal-dialog {
       background: var(--white);
       width: 100%;
-      max-width: 560px;
+      max-width: 580px;
+      max-height: 90vh;
+      overflow-y: auto;
       border-radius: var(--radius-lg);
       box-shadow: var(--shadow-lg);
-      overflow: hidden;
       transform: translateY(16px);
       transition: transform 0.25s ease;
     }
@@ -1130,10 +1209,13 @@
       align-items: center;
       justify-content: space-between;
       gap: 1rem;
+      position: sticky;
+      top: 0;
+      z-index: 2;
     }
 
     .modal-header h3 {
-      font-size: 1.2rem;
+      font-size: 1.18rem;
       font-weight: 800;
     }
 
@@ -1159,7 +1241,7 @@
     }
 
     .modal-field {
-      margin-bottom: 1rem;
+      margin-bottom: 1.1rem;
     }
 
     .modal-field-label {
@@ -1168,13 +1250,38 @@
       text-transform: uppercase;
       letter-spacing: 0.06em;
       color: var(--text-muted);
-      margin-bottom: 0.2rem;
+      margin-bottom: 0.35rem;
     }
 
     .modal-field-value {
       font-size: 0.96rem;
       color: var(--text-dark);
       font-weight: 600;
+    }
+
+    .modal-wa-rep-list {
+      display: grid;
+      gap: 0.65rem;
+      margin-top: 0.5rem;
+    }
+
+    .modal-wa-rep-btn {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      padding: 0.85rem 1.1rem;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: var(--white);
+      font-weight: 800;
+      font-size: 0.92rem;
+      box-shadow: 0 5px 14px rgba(37, 211, 102, 0.28);
+    }
+
+    .modal-wa-rep-btn:hover {
+      background: linear-gradient(135deg, #2be06f 0%, #0f7a38 100%);
+      transform: translateY(-2px);
     }
 
     /* ==========================================================================
@@ -1203,8 +1310,8 @@
 
     .footer-grid {
       display: grid;
-      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
-      gap: 2.25rem;
+      grid-template-columns: 1.3fr 0.9fr 1.4fr 1.1fr;
+      gap: 2rem;
       margin-bottom: 3rem;
     }
 
@@ -1216,16 +1323,34 @@
     }
 
     .footer-links li {
-      margin-bottom: 0.55rem;
+      margin-bottom: 0.65rem;
     }
 
     .footer-links a {
       font-size: 0.9rem;
-      color: rgba(255, 255, 255, 0.8);
+      color: rgba(255, 255, 255, 0.82);
     }
 
     .footer-links a:hover {
       color: #6ee787;
+    }
+
+    .footer-wa-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.45rem;
+      background: linear-gradient(135deg, #25D366 0%, #128C7E 100%);
+      color: var(--white) !important;
+      padding: 0.42rem 0.85rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem !important;
+      font-weight: 700;
+      margin-top: 0.25rem;
+    }
+
+    .footer-wa-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 14px rgba(37, 211, 102, 0.35);
     }
 
     .footer-bottom {
@@ -1245,7 +1370,7 @@
       bottom: 1.5rem;
       right: 1.5rem;
       z-index: 1500;
-      background: linear-gradient(135deg, var(--green-health), #0e7033);
+      background: linear-gradient(135deg, #25D366, #128C7E);
       color: var(--white);
       border: 2px solid var(--white);
       border-radius: var(--radius-pill);
@@ -1255,7 +1380,7 @@
       gap: 0.55rem;
       font-weight: 800;
       font-size: 0.9rem;
-      box-shadow: 0 12px 28px rgba(21, 148, 71, 0.4);
+      box-shadow: 0 12px 28px rgba(37, 211, 102, 0.45);
     }
 
     .floating-wa-btn:hover {
@@ -1497,6 +1622,40 @@
                 Contact Us on WhatsApp
               </button>
             </div>
+
+            <!-- Direct Clickable WhatsApp Buttons for All 3 Representatives -->
+            <div class="hero-wa-quick-bar">
+              <span class="hero-wa-quick-label">Direct WhatsApp Chat With Representatives:</span>
+              <div class="hero-wa-quick-buttons">
+                <a
+                  href="https://wa.me/923029218126?text=Hello%20Muhammad%20Huzifa%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale%20supply."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hero-wa-chip"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                  <span>Muhammad Huzifa (CEO)</span>
+                </a>
+                <a
+                  href="https://wa.me/923481889622?text=Hello%20Maaz%20ur%20Rahman%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale%20supply."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hero-wa-chip"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                  <span>Maaz ur Rahman (Manager)</span>
+                </a>
+                <a
+                  href="https://wa.me/923289069545?text=Hello%20Ubaid%20Ullah%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale%20supply."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="hero-wa-chip"
+                >
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                  <span>Ubaid Ullah (Sales)</span>
+                </a>
+              </div>
+            </div>
           </div>
 
           <!-- Right-side Custom SVG Pharmaceutical Distribution Graphic -->
@@ -1622,7 +1781,7 @@
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
               <a href="#categories" class="btn btn-whatsapp">Browse 6 Product Categories</a>
-              <a href="#representatives" class="btn btn-outline-light">View Team Contacts</a>
+              <a href="#representatives" class="btn btn-outline-light">View Team WhatsApp &amp; Contacts</a>
             </div>
           </div>
         </div>
@@ -1640,7 +1799,7 @@
           </div>
 
           <div class="categories-grid" id="categoriesGrid">
-            <!-- Populated dynamically by JavaScript for consistency -->
+            <!-- Populated dynamically by JavaScript -->
           </div>
         </div>
       </section>
@@ -1734,10 +1893,10 @@
       <section id="representatives" class="section section-alt" aria-labelledby="repsHeading">
         <div class="container">
           <div class="section-header">
-            <span class="section-eyebrow">Direct Leadership &amp; Sales Contacts</span>
+            <span class="section-eyebrow">Direct WhatsApp &amp; Phone Lines</span>
             <h2 id="repsHeading" class="section-title">Company Representatives</h2>
             <p class="section-desc">
-              Connect directly with our leadership and sales management team by phone for wholesale inquiries and distribution coordination.
+              Click the green WhatsApp button on any representative card below to start an instant WhatsApp conversation, or call directly.
             </p>
           </div>
 
@@ -1752,12 +1911,29 @@
               </div>
               <span class="rep-role">Manager</span>
               <h3 class="rep-name">Maaz ur Rahman</h3>
-              <a href="tel:03481889622" class="rep-phone-btn" aria-label="Call Manager Maaz ur Rahman at 0348 1889622">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                <span>0348 1889622</span>
-              </a>
+              <p class="rep-number-display">0348 1889622</p>
+
+              <div class="rep-actions-stack">
+                <a
+                  href="https://wa.me/923481889622?text=Hello%20Maaz%20ur%20Rahman%20(Manager%20-%20K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20your%20pharmaceutical%20wholesale%20products."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rep-wa-btn"
+                  aria-label="Chat on WhatsApp with Manager Maaz ur Rahman at 0348 1889622"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                  </svg>
+                  <span>WhatsApp: 0348 1889622</span>
+                </a>
+
+                <a href="tel:03481889622" class="rep-phone-btn" aria-label="Call Manager Maaz ur Rahman at 0348 1889622">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call: 0348 1889622</span>
+                </a>
+              </div>
             </article>
 
             <!-- Representative 2: Muhammad Huzifa -->
@@ -1770,12 +1946,29 @@
               </div>
               <span class="rep-role">Owner &amp; CEO</span>
               <h3 class="rep-name">Muhammad Huzifa</h3>
-              <a href="tel:03029218126" class="rep-phone-btn" aria-label="Call Owner and CEO Muhammad Huzifa at 0302 9218126">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                <span>0302 9218126</span>
-              </a>
+              <p class="rep-number-display">0302 9218126</p>
+
+              <div class="rep-actions-stack">
+                <a
+                  href="https://wa.me/923029218126?text=Hello%20Muhammad%20Huzifa%20(Owner%20%26%20CEO%20-%20K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20your%20pharmaceutical%20wholesale%20products."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rep-wa-btn"
+                  aria-label="Chat on WhatsApp with Owner and CEO Muhammad Huzifa at 0302 9218126"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                  </svg>
+                  <span>WhatsApp: 0302 9218126</span>
+                </a>
+
+                <a href="tel:03029218126" class="rep-phone-btn" aria-label="Call Owner and CEO Muhammad Huzifa at 0302 9218126">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call: 0302 9218126</span>
+                </a>
+              </div>
             </article>
 
             <!-- Representative 3: Ubaid Ullah -->
@@ -1788,12 +1981,29 @@
               </div>
               <span class="rep-role">Sales Manager</span>
               <h3 class="rep-name">Ubaid Ullah</h3>
-              <a href="tel:03289069545" class="rep-phone-btn" aria-label="Call Sales Manager Ubaid Ullah at 0328 9069545">
-                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
-                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
-                </svg>
-                <span>0328 9069545</span>
-              </a>
+              <p class="rep-number-display">0328 9069545</p>
+
+              <div class="rep-actions-stack">
+                <a
+                  href="https://wa.me/923289069545?text=Hello%20Ubaid%20Ullah%20(Sales%20Manager%20-%20K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20your%20pharmaceutical%20wholesale%20products."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="rep-wa-btn"
+                  aria-label="Chat on WhatsApp with Sales Manager Ubaid Ullah at 0328 9069545"
+                >
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                  </svg>
+                  <span>WhatsApp: 0328 9069545</span>
+                </a>
+
+                <a href="tel:03289069545" class="rep-phone-btn" aria-label="Call Sales Manager Ubaid Ullah at 0328 9069545">
+                  <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                  </svg>
+                  <span>Call: 0328 9069545</span>
+                </a>
+              </div>
             </article>
           </div>
 
@@ -1802,7 +2012,7 @@
             <div class="location-info">
               <span class="hero-pill-badge" style="margin-bottom: 0.65rem;">Regional Distribution Office</span>
               <h3>Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan</h3>
-              <p>Click to view the area on Google Maps or reach out via WhatsApp and direct representative phone lines.</p>
+              <p>Click to view the area on Google Maps or reach out via our direct WhatsApp and phone lines above.</p>
             </div>
             <div style="display: flex; flex-wrap: wrap; gap: 0.85rem; flex-shrink: 0;">
               <a
@@ -1844,7 +2054,10 @@
               <p id="catViewIntro" style="font-size: 1.05rem; color: rgba(255,255,255,0.9); max-width: 720px; margin-bottom: 1.5rem;"></p>
               <div style="display: flex; flex-wrap: wrap; gap: 0.85rem;">
                 <button type="button" id="catHeroWaBtn" class="btn btn-whatsapp">
-                  Inquire About This Category on WhatsApp
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+                  </svg>
+                  <span>Inquire About This Category on WhatsApp</span>
                 </button>
                 <a href="#categories" class="btn btn-outline-light">
                   &larr; Back to All Categories
@@ -1899,7 +2112,7 @@
   </main>
 
   <!-- ========================================================================
-       PRODUCT DETAILS & WHATSAPP CONFIGURATION MODAL
+       PRODUCT DETAILS & 3-REPRESENTATIVE WHATSAPP MODAL
        ======================================================================== -->
   <div class="modal-backdrop" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
     <div class="modal-dialog">
@@ -1925,7 +2138,7 @@
     <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
       <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
     </svg>
-    <span>WhatsApp Inquiry</span>
+    <span>WhatsApp Chat</span>
   </button>
 
   <!-- ========================================================================
@@ -1970,13 +2183,46 @@
           </ul>
         </div>
 
-        <!-- Col 3: Direct Team Numbers -->
+        <!-- Col 3: Direct WhatsApp & Call for All 3 Representatives -->
         <div class="footer-col">
-          <h4>Leadership &amp; Sales</h4>
+          <h4>Direct WhatsApp &amp; Call</h4>
           <ul class="footer-links">
-            <li><a href="tel:03029218126">Muhammad Huzifa (Owner &amp; CEO): 0302 9218126</a></li>
-            <li><a href="tel:03481889622">Maaz ur Rahman (Manager): 0348 1889622</a></li>
-            <li><a href="tel:03289069545">Ubaid Ullah (Sales Manager): 0328 9069545</a></li>
+            <li>
+              <div><strong>Muhammad Huzifa</strong> (Owner &amp; CEO)</div>
+              <a
+                href="https://wa.me/923029218126?text=Hello%20Muhammad%20Huzifa%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-wa-btn"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                <span>WhatsApp: 0302 9218126</span>
+              </a>
+            </li>
+            <li>
+              <div><strong>Maaz ur Rahman</strong> (Manager)</div>
+              <a
+                href="https://wa.me/923481889622?text=Hello%20Maaz%20ur%20Rahman%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-wa-btn"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                <span>WhatsApp: 0348 1889622</span>
+              </a>
+            </li>
+            <li>
+              <div><strong>Ubaid Ullah</strong> (Sales Manager)</div>
+              <a
+                href="https://wa.me/923289069545?text=Hello%20Ubaid%20Ullah%20(K.G%20Enterprises)%2C%20I%20would%20like%20to%20inquire%20about%20pharmaceutical%20wholesale."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="footer-wa-btn"
+              >
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+                <span>WhatsApp: 0328 9069545</span>
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -1984,13 +2230,15 @@
         <div class="footer-col">
           <h4>Wholesale Inquiries</h4>
           <p style="font-size: 0.85rem; margin-bottom: 0.85rem;">
-            Company WhatsApp Placeholder:<br/>
+            Click below to choose any representative on WhatsApp with a prefilled inquiry:<br/>
             <button
               type="button"
-              data-wa-inquiry="Footer Wholesale Inquiry"
-              style="background: none; border: none; color: #6ee787; font-weight: 700; text-decoration: underline; padding: 0; text-align: left;"
+              class="footer-wa-btn"
+              data-wa-inquiry="General Wholesale & Distribution Inquiry"
+              style="border: none; margin-top: 0.5rem;"
             >
-              [INSERT VERIFIED COMPANY WHATSAPP NUMBER]
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>
+              <span>Open WhatsApp Inquiry</span>
             </button>
           </p>
           <p style="font-size: 0.82rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.12);">
@@ -2032,13 +2280,34 @@
       "use strict";
 
       /* ----------------------------------------------------------------------
-         1. COMPANY WHATSAPP CONFIGURATION
-         Keep as placeholder until the official verified company WhatsApp number
-         is provided. Never confuse with Ali Graphics' number (03118322287).
-         To activate direct WhatsApp routing later, replace the string below
-         with digits in international format, e.g. "923001234567".
+         1. THREE COMPANY REPRESENTATIVES WHATSAPP & PHONE DATA
+         (Never confused with Ali Graphics designer number: 03118322287)
       ---------------------------------------------------------------------- */
-      const COMPANY_WHATSAPP_NUMBER = "[INSERT VERIFIED COMPANY WHATSAPP NUMBER]";
+      const COMPANY_REPRESENTATIVES = [
+        {
+          name: "Maaz ur Rahman",
+          role: "Manager",
+          phoneDisplay: "0348 1889622",
+          tel: "03481889622",
+          waNumber: "923481889622"
+        },
+        {
+          name: "Muhammad Huzifa",
+          role: "Owner & CEO",
+          phoneDisplay: "0302 9218126",
+          tel: "03029218126",
+          waNumber: "923029218126"
+        },
+        {
+          name: "Ubaid Ullah",
+          role: "Sales Manager",
+          phoneDisplay: "0328 9069545",
+          tel: "03289069545",
+          waNumber: "923289069545"
+        }
+      ];
+
+      const WA_ICON_SVG = `<svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/></svg>`;
 
       /* ----------------------------------------------------------------------
          2. CUSTOM INLINE SVG ILLUSTRATIONS FOR ALL 6 CATEGORIES
@@ -2137,7 +2406,7 @@
               category: "Tablets",
               subcategory: "Vitamin and mineral tablets",
               description: "Nutritional and micronutrient tablet formulations distributed to pharmacies and healthcare outlets.",
-              packaging: " Strip & bottle pack options (Placeholder specification — inquire for current catalog)"
+              packaging: "Strip & bottle pack options (Placeholder specification — inquire for current catalog)"
             },
             {
               name: "Film-Coated & Other Tablet Formulations [Placeholder Item]",
@@ -2344,6 +2613,16 @@
                   <path d="M5 12h14M12 5l7 7-7 7"/>
                 </svg>
               </a>
+              <button
+                type="button"
+                class="btn btn-whatsapp"
+                style="width: 100%;"
+                data-wa-inquiry="${cat.title} Category"
+                aria-label="Inquire about ${cat.title} on WhatsApp"
+              >
+                ${WA_ICON_SVG}
+                <span>WhatsApp Inquiry</span>
+              </button>
             </div>
           </article>
         `).join("");
@@ -2360,7 +2639,7 @@
       }
 
       /* ----------------------------------------------------------------------
-         5. WHATSAPP INQUIRY HANDLER (WITH PLACEHOLDER GUARD)
+         5. WHATSAPP INQUIRY HANDLER WITH ALL 3 REPRESENTATIVES
       ---------------------------------------------------------------------- */
       const infoModal = document.getElementById("infoModal");
       const modalTitle = document.getElementById("modalTitle");
@@ -2372,64 +2651,58 @@
         return `Hello K.G Enterprises, I would like to inquire about your ${subjectName}. Please share the available information.`;
       }
 
+      function renderThreeRepWhatsAppButtons(message) {
+        const encodedMsg = encodeURIComponent(message);
+        return `
+          <div class="modal-wa-rep-list">
+            ${COMPANY_REPRESENTATIVES.map((rep) => `
+              <a
+                href="https://wa.me/${rep.waNumber}?text=${encodedMsg}"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="modal-wa-rep-btn"
+              >
+                <span style="display: inline-flex; align-items: center; gap: 0.55rem;">
+                  ${WA_ICON_SVG}
+                  <span>${escapeHtml(rep.name)} (${escapeHtml(rep.role)})</span>
+                </span>
+                <span style="font-size: 0.85rem; background: rgba(0,0,0,0.18); padding: 0.2rem 0.6rem; border-radius: 999px;">
+                  ${escapeHtml(rep.phoneDisplay)} &rarr;
+                </span>
+              </a>
+            `).join("")}
+          </div>
+        `;
+      }
+
       function openCompanyWhatsApp(subjectName) {
         const message = buildPrefilledMessage(subjectName);
-        const cleanedDigits = COMPANY_WHATSAPP_NUMBER.replace(/\D/g, "");
 
-        // If a real international number has been configured, open wa.me directly
-        if (cleanedDigits.length >= 10 && !COMPANY_WHATSAPP_NUMBER.includes("INSERT")) {
-          const url = `https://wa.me/${cleanedDigits}?text=${encodeURIComponent(message)}`;
-          window.open(url, "_blank", "noopener,noreferrer");
-          return;
-        }
-
-        // Otherwise, show an interactive modal with the prepared message, placeholder notice, and verified phone numbers
         openModal(
-          "Wholesale Inquiry — K.G. Enterprises",
+          "WhatsApp Wholesale Inquiry — K.G. Enterprises",
           `
             <div class="modal-field">
-              <div class="modal-field-label">Prepared Inquiry Subject</div>
+              <div class="modal-field-label">Inquiry Topic</div>
               <div class="modal-field-value">${escapeHtml(subjectName)}</div>
             </div>
             <div class="modal-field">
-              <div class="modal-field-label">Prefilled WhatsApp Message</div>
-              <div style="background: var(--bg-soft-blue); border: 1px solid var(--border-subtle); padding: 0.85rem; border-radius: 8px; font-size: 0.9rem; color: var(--navy-deep);" id="prefilledMsgBox">${escapeHtml(message)}</div>
+              <div class="modal-field-label">Select Any Representative to Start WhatsApp Chat</div>
+              ${renderThreeRepWhatsAppButtons(message)}
             </div>
-            <div class="modal-field" style="background: rgba(21,148,71,0.08); border-left: 4px solid var(--green-health); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.84rem;">
-              <strong>Company WhatsApp Placeholder:</strong> <code>${escapeHtml(COMPANY_WHATSAPP_NUMBER)}</code><br/>
-              To enable one-click WhatsApp routing to the company line, replace <code>COMPANY_WHATSAPP_NUMBER</code> in <code>index.html</code> with the verified company WhatsApp number.
-            </div>
-            <div class="modal-field">
-              <div class="modal-field-label">Direct Representative Phone Lines (Click to Call)</div>
-              <div style="display: grid; gap: 0.5rem; margin-top: 0.45rem;">
-                <a href="tel:03029218126" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Muhammad Huzifa (Owner &amp; CEO): 0302 9218126</a>
-                <a href="tel:03481889622" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Maaz ur Rahman (Manager): 0348 1889622</a>
-                <a href="tel:03289069545" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Ubaid Ullah (Sales Manager): 0328 9069545</a>
-              </div>
-            </div>
-            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
-              <button type="button" class="btn btn-whatsapp" id="copyInquiryBtn" style="flex: 1;">Copy Inquiry Message</button>
-              <a href="https://wa.me/?text=${encodeURIComponent(message)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">Open WhatsApp Share</a>
+            <div class="modal-field" style="margin-top: 1.15rem;">
+              <div class="modal-field-label">Prefilled Message Preview</div>
+              <div style="background: var(--bg-soft-blue); border: 1px solid var(--border-subtle); padding: 0.8rem; border-radius: 8px; font-size: 0.88rem; color: var(--navy-deep);">${escapeHtml(message)}</div>
             </div>
           `
         );
-
-        const copyBtn = document.getElementById("copyInquiryBtn");
-        if (copyBtn) {
-          copyBtn.addEventListener("click", function () {
-            if (navigator.clipboard && navigator.clipboard.writeText) {
-              navigator.clipboard.writeText(message).then(function () {
-                copyBtn.textContent = "Copied to Clipboard!";
-              });
-            }
-          });
-        }
       }
 
       /* ----------------------------------------------------------------------
-         6. PRODUCT DETAIL MODAL
+         6. PRODUCT DETAIL MODAL (WITH ALL 3 REPRESENTATIVE WHATSAPP BUTTONS)
       ---------------------------------------------------------------------- */
       function openProductDetailModal(product) {
+        const message = buildPrefilledMessage(`${product.category} (${product.name})`);
+
         openModal(
           product.name,
           `
@@ -2445,23 +2718,12 @@
               <div class="modal-field-label">Packaging Information</div>
               <div class="modal-field-value">${escapeHtml(product.packaging)}</div>
             </div>
-            <div class="modal-field" style="font-size: 0.8rem; color: var(--text-muted); background: var(--bg-soft-blue); padding: 0.75rem; border-radius: 8px;">
-              Note: This entry is a category placeholder for business distribution inquiries and does not constitute medical advice or real-time stock confirmation.
-            </div>
-            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
-              <button type="button" class="btn btn-whatsapp" id="modalProductWaBtn" style="width: 100%;">
-                Inquire About This Product on WhatsApp
-              </button>
+            <div class="modal-field">
+              <div class="modal-field-label">Inquire on WhatsApp (Click Any Representative)</div>
+              ${renderThreeRepWhatsAppButtons(message)}
             </div>
           `
         );
-
-        const waBtn = document.getElementById("modalProductWaBtn");
-        if (waBtn) {
-          waBtn.addEventListener("click", function () {
-            openCompanyWhatsApp(`${product.category} — ${product.name}`);
-          });
-        }
       }
 
       function openModal(titleText, bodyHtml) {
@@ -2546,7 +2808,8 @@
                   View Details
                 </button>
                 <button type="button" class="btn btn-whatsapp" data-prod-wa="${idx}">
-                  WhatsApp Inquiry
+                  ${WA_ICON_SVG}
+                  <span>WhatsApp Inquiry</span>
                 </button>
               </div>
             </article>
@@ -2554,7 +2817,6 @@
           )
           .join("");
 
-        // Attach handlers to newly rendered product cards
         catProductsGrid.querySelectorAll("[data-prod-detail]").forEach((btn) => {
           btn.addEventListener("click", function () {
             const index = parseInt(btn.getAttribute("data-prod-detail"), 10);
@@ -2580,7 +2842,6 @@
       function handleRoute() {
         const hash = window.location.hash || "#home";
 
-        // Close mobile menu on route change
         mainNav.classList.remove("open");
         mobileMenuBtn.setAttribute("aria-expanded", "false");
 
@@ -2590,7 +2851,6 @@
           return;
         }
 
-        // Show Home View for #home or section anchors
         categoryView.classList.add("view-hidden");
         notFoundView.classList.add("view-hidden");
         homeView.classList.remove("view-hidden");
@@ -2635,7 +2895,6 @@
         mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
       });
 
-      // Delegate general WhatsApp inquiry buttons
       document.addEventListener("click", function (e) {
         const waTrigger = e.target.closest("[data-wa-inquiry]");
         if (waTrigger) {
@@ -2653,10 +2912,8 @@
           .replace(/'/g, "&#039;");
       }
 
-      // Dynamic Copyright Year
       document.getElementById("currentYear").textContent = new Date().getFullYear();
 
-      // Initialize Views & Routing
       renderHomepageCategories();
       window.addEventListener("hashchange", handleRoute);
       handleRoute();
