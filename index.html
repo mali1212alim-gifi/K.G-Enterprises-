@@ -1,0 +1,2666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>K.G. ENTERPRISES — KHANX GROUP | Pharmaceutical Wholesale &amp; Distribution</title>
+  <meta name="description" content="K.G. Enterprises (Khanx Group) provides trusted pharmaceutical wholesale and distribution in Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan. Genuine medicines, reliable supply, and timely delivery." />
+  <meta name="theme-color" content="#063B70" />
+  
+  <!-- Open Graph Metadata -->
+  <meta property="og:title" content="K.G. ENTERPRISES — KHANX GROUP | Pharmaceutical Wholesale &amp; Distribution" />
+  <meta property="og:description" content="Trusted Pharmaceutical Wholesale &amp; Distribution in Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan. Tablets, Capsules, Syrups, Injections, IV Fluids, and Medical Devices." />
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="en_PK" />
+
+  <style>
+    /* ==========================================================================
+       1. CSS VARIABLES & DESIGN SYSTEM
+       ========================================================================== */
+    :root {
+      --navy-deep: #063B70;
+      --blue-primary: #0866B2;
+      --green-health: #159447;
+      --green-accent: #35C759;
+      --white: #FFFFFF;
+      --bg-soft-blue: #F2F8FC;
+      --grey-neutral: #EAF0F5;
+      --text-dark: #17324D;
+      --text-muted: #4A6580;
+      --border-subtle: rgba(8, 102, 178, 0.14);
+      --glass-bg: rgba(255, 255, 255, 0.88);
+      --shadow-sm: 0 4px 12px rgba(6, 59, 112, 0.06);
+      --shadow-md: 0 12px 32px rgba(6, 59, 112, 0.10);
+      --shadow-lg: 0 20px 48px rgba(6, 59, 112, 0.16);
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-pill: 9999px;
+      --transition-fast: 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+      --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1240px;
+      --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    /* ==========================================================================
+       2. RESET & BASE ACCESSIBILITY
+       ========================================================================== */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-family: var(--font-sans);
+      color: var(--text-dark);
+      background-color: var(--bg-soft-blue);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      html {
+        scroll-behavior: auto;
+      }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+      }
+    }
+
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    a, button {
+      color: inherit;
+      text-decoration: none;
+      font-family: inherit;
+      cursor: pointer;
+      transition: var(--transition-fast);
+    }
+
+    :focus-visible {
+      outline: 3px solid var(--green-accent);
+      outline-offset: 3px;
+      border-radius: 4px;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    img, svg {
+      display: block;
+      max-width: 100%;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.25rem;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    /* ==========================================================================
+       3. TOP DESIGNER CREDIT BAR (ALI GRAPHICS)
+       ========================================================================== */
+    .designer-credit-bar {
+      background-color: #032242;
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 0.75rem;
+      letter-spacing: 0.03em;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      z-index: 1001;
+    }
+
+    .designer-credit-link {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.35rem 1rem;
+      width: 100%;
+      text-align: center;
+      color: var(--white);
+    }
+
+    .designer-credit-link:hover {
+      background-color: rgba(21, 148, 71, 0.25);
+      color: var(--green-accent);
+    }
+
+    .designer-credit-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      background: rgba(53, 199, 89, 0.16);
+      color: #6ee787;
+      padding: 0.1rem 0.45rem;
+      border-radius: var(--radius-pill);
+      font-weight: 600;
+      font-size: 0.7rem;
+    }
+
+    /* ==========================================================================
+       4. PREMIUM RESPONSIVE HEADER
+       ========================================================================== */
+    .site-header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--glass-bg);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      min-height: 82px;
+      gap: 1rem;
+    }
+
+    .brand-link {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      text-align: left;
+    }
+
+    .brand-logo-wrap {
+      width: 54px;
+      height: 54px;
+      flex-shrink: 0;
+      border-radius: var(--radius-md);
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--blue-primary) 60%, var(--green-health) 100%);
+      padding: 3px;
+      box-shadow: 0 6px 16px rgba(6, 59, 112, 0.18);
+    }
+
+    .brand-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .brand-group-tag {
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--green-health);
+      line-height: 1.1;
+    }
+
+    .brand-name {
+      font-size: 1.28rem;
+      font-weight: 900;
+      color: var(--navy-deep);
+      letter-spacing: -0.02em;
+      line-height: 1.15;
+    }
+
+    .brand-subtitle {
+      font-size: 0.73rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      line-height: 1.2;
+    }
+
+    .main-nav {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-list {
+      display: flex;
+      align-items: center;
+      gap: 0.25rem;
+    }
+
+    .nav-link {
+      padding: 0.55rem 0.9rem;
+      border-radius: var(--radius-sm);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--text-dark);
+      position: relative;
+    }
+
+    .nav-link:hover,
+    .nav-link.active {
+      color: var(--blue-primary);
+      background: rgba(8, 102, 178, 0.07);
+    }
+
+    .nav-link.active::after {
+      content: "";
+      position: absolute;
+      bottom: 4px;
+      left: 0.9rem;
+      right: 0.9rem;
+      height: 2.5px;
+      background: linear-gradient(90deg, var(--blue-primary), var(--green-health));
+      border-radius: 2px;
+    }
+
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.72rem 1.35rem;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+      font-size: 0.92rem;
+      border: none;
+      transition: var(--transition-smooth);
+      text-align: center;
+      line-height: 1.2;
+    }
+
+    .btn-whatsapp {
+      background: linear-gradient(135deg, var(--green-health) 0%, #0f7a38 100%);
+      color: var(--white);
+      box-shadow: 0 6px 18px rgba(21, 148, 71, 0.28);
+    }
+
+    .btn-whatsapp:hover {
+      background: linear-gradient(135deg, #19ab52 0%, var(--green-health) 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(21, 148, 71, 0.36);
+    }
+
+    .btn-primary {
+      background: linear-gradient(135deg, var(--blue-primary) 0%, var(--navy-deep) 100%);
+      color: var(--white);
+      box-shadow: 0 6px 18px rgba(8, 102, 178, 0.28);
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 10px 24px rgba(8, 102, 178, 0.38);
+    }
+
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.12);
+      color: var(--white);
+      border: 1.5px solid rgba(255, 255, 255, 0.35);
+      backdrop-filter: blur(8px);
+    }
+
+    .btn-outline-light:hover {
+      background: var(--white);
+      color: var(--navy-deep);
+      transform: translateY(-2px);
+    }
+
+    .btn-secondary {
+      background: var(--white);
+      color: var(--navy-deep);
+      border: 1.5px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+    }
+
+    .btn-secondary:hover {
+      border-color: var(--blue-primary);
+      color: var(--blue-primary);
+      transform: translateY(-2px);
+    }
+
+    .mobile-menu-toggle {
+      display: none;
+      width: 44px;
+      height: 44px;
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border-subtle);
+      background: var(--white);
+      color: var(--navy-deep);
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==========================================================================
+       5. HERO SECTION (MOUNTAIN & PHARMACEUTICAL THEME)
+       ========================================================================== */
+    .hero-section {
+      position: relative;
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #074f8b 52%, #0d6e4c 100%);
+      color: var(--white);
+      padding: 4.5rem 0 6.5rem;
+      overflow: hidden;
+    }
+
+    .hero-bg-graphics {
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+      overflow: hidden;
+    }
+
+    .hero-mountain-svg {
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      min-height: 150px;
+      object-fit: cover;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 2;
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .hero-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.24);
+      padding: 0.4rem 0.95rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      margin-bottom: 1.25rem;
+      backdrop-filter: blur(6px);
+    }
+
+    .hero-pill-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--green-accent);
+      box-shadow: 0 0 0 4px rgba(53, 199, 89, 0.25);
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4.2vw, 3.35rem);
+      font-weight: 900;
+      line-height: 1.12;
+      letter-spacing: -0.025em;
+      margin-bottom: 1.25rem;
+    }
+
+    .hero-title span {
+      color: #6ee787;
+    }
+
+    .hero-lead {
+      font-size: 1.08rem;
+      color: rgba(255, 255, 255, 0.9);
+      max-width: 600px;
+      margin-bottom: 1.75rem;
+      line-height: 1.65;
+    }
+
+    .hero-location-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.55rem;
+      background: rgba(6, 59, 112, 0.55);
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.55rem 1rem;
+      border-radius: var(--radius-md);
+      font-size: 0.88rem;
+      color: var(--white);
+      margin-bottom: 2rem;
+    }
+
+    .hero-location-chip:hover {
+      background: rgba(21, 148, 71, 0.45);
+      border-color: var(--green-accent);
+    }
+
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    /* Hero Right Visual Composition */
+    .hero-visual-card {
+      background: rgba(255, 255, 255, 0.1);
+      border: 1px solid rgba(255, 255, 255, 0.22);
+      border-radius: var(--radius-lg);
+      padding: 1.75rem;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.25);
+      position: relative;
+    }
+
+    .hero-visual-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.15rem;
+      padding-bottom: 0.85rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .hero-visual-title {
+      font-weight: 800;
+      font-size: 1rem;
+      letter-spacing: 0.02em;
+    }
+
+    .hero-visual-tag {
+      font-size: 0.75rem;
+      background: rgba(53, 199, 89, 0.25);
+      color: #98f5ab;
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-pill);
+      font-weight: 700;
+    }
+
+    .hero-mini-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+      margin-top: 1.1rem;
+    }
+
+    .hero-mini-item {
+      background: rgba(255, 255, 255, 0.12);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: var(--radius-sm);
+      padding: 0.65rem;
+      text-align: center;
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: var(--white);
+      transition: var(--transition-fast);
+    }
+
+    .hero-mini-item:hover {
+      background: rgba(53, 199, 89, 0.28);
+      transform: translateY(-2px);
+    }
+
+    /* ==========================================================================
+       6. SECTION COMMON STYLES
+       ========================================================================== */
+    .section {
+      padding: 5rem 0;
+    }
+
+    .section-alt {
+      background-color: var(--white);
+    }
+
+    .section-neutral {
+      background-color: var(--grey-neutral);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 3.25rem;
+    }
+
+    .section-eyebrow {
+      display: inline-block;
+      font-size: 0.78rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--green-health);
+      background: rgba(21, 148, 71, 0.1);
+      padding: 0.3rem 0.85rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-size: clamp(1.75rem, 3vw, 2.4rem);
+      font-weight: 900;
+      color: var(--navy-deep);
+      line-height: 1.2;
+      margin-bottom: 0.85rem;
+    }
+
+    .section-desc {
+      font-size: 1.02rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       7. COMPANY INTRODUCTION SECTION
+       ========================================================================== */
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    .about-card {
+      background: linear-gradient(145deg, var(--navy-deep), var(--blue-primary));
+      color: var(--white);
+      padding: 2.4rem;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-md);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .about-points {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.75rem;
+    }
+
+    .about-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      background: var(--bg-soft-blue);
+      padding: 1rem;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+    }
+
+    .about-point-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: var(--radius-sm);
+      background: rgba(21, 148, 71, 0.12);
+      color: var(--green-health);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .about-point h3 {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin-bottom: 0.15rem;
+    }
+
+    .about-point p {
+      font-size: 0.83rem;
+      color: var(--text-muted);
+      line-height: 1.45;
+    }
+
+    /* ==========================================================================
+       8. INTERACTIVE PRODUCT CATEGORIES (6 CARDS)
+       ========================================================================== */
+    .categories-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+    }
+
+    .category-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      padding: 1.75rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+      overflow: hidden;
+      text-align: left;
+    }
+
+    .category-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--blue-primary), var(--green-health));
+      opacity: 0.85;
+      transition: var(--transition-fast);
+    }
+
+    .category-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-lg);
+      border-color: rgba(8, 102, 178, 0.35);
+    }
+
+    .category-card:hover::before {
+      height: 7px;
+      background: linear-gradient(90deg, var(--green-health), var(--green-accent));
+    }
+
+    .category-illustration {
+      height: 140px;
+      background: linear-gradient(180deg, var(--bg-soft-blue) 0%, rgba(234, 240, 245, 0.5) 100%);
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.35rem;
+      padding: 1rem;
+      border: 1px solid rgba(8, 102, 178, 0.08);
+    }
+
+    .category-title {
+      font-size: 1.32rem;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin-bottom: 0.45rem;
+    }
+
+    .category-subtitle {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .category-card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 1rem;
+      border-top: 1px solid var(--grey-neutral);
+      font-weight: 700;
+      font-size: 0.9rem;
+      color: var(--blue-primary);
+    }
+
+    .category-card:hover .category-card-footer {
+      color: var(--green-health);
+    }
+
+    /* ==========================================================================
+       9. COMPANY ADVANTAGES (4 PILLARS)
+       ========================================================================== */
+    .advantages-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.5rem;
+    }
+
+    .advantage-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.85rem 1.5rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .advantage-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--green-health);
+    }
+
+    .advantage-icon {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 1.15rem;
+      border-radius: 50%;
+      background: linear-gradient(135deg, rgba(8, 102, 178, 0.1), rgba(21, 148, 71, 0.15));
+      color: var(--navy-deep);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .advantage-title {
+      font-size: 1.08rem;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin-bottom: 0.3rem;
+    }
+
+    .advantage-tagline {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--green-health);
+      margin-bottom: 0.65rem;
+    }
+
+    .advantage-desc {
+      font-size: 0.86rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       10. PRODUCT SHOWCASE STRIP (6 VISUAL PANELS)
+       ========================================================================== */
+    .showcase-strip {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 1rem;
+    }
+
+    .showcase-panel {
+      background: linear-gradient(160deg, var(--navy-deep) 0%, #095191 100%);
+      color: var(--white);
+      border-radius: var(--radius-md);
+      padding: 1.35rem 1rem;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.85rem;
+      border: 1px solid rgba(255, 255, 255, 0.14);
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition-smooth);
+    }
+
+    .showcase-panel:hover {
+      transform: translateY(-5px);
+      background: linear-gradient(160deg, var(--blue-primary) 0%, var(--green-health) 100%);
+      box-shadow: var(--shadow-md);
+    }
+
+    .showcase-art {
+      width: 72px;
+      height: 72px;
+      border-radius: var(--radius-sm);
+      background: rgba(255, 255, 255, 0.12);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.5rem;
+    }
+
+    .showcase-name {
+      font-weight: 800;
+      font-size: 0.95rem;
+      letter-spacing: 0.01em;
+    }
+
+    .showcase-cta {
+      font-size: 0.74rem;
+      color: #98f5ab;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    /* ==========================================================================
+       11. REPRESENTATIVES & LOCATION SECTION
+       ========================================================================== */
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.75rem;
+      margin-bottom: 3rem;
+    }
+
+    .rep-card {
+      background: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.75rem;
+      border: 1px solid var(--border-subtle);
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      transition: var(--transition-smooth);
+    }
+
+    .rep-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--blue-primary);
+    }
+
+    .rep-avatar {
+      width: 76px;
+      height: 76px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--navy-deep), var(--blue-primary));
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.15rem;
+      box-shadow: 0 8px 20px rgba(6, 59, 112, 0.2);
+    }
+
+    .rep-role {
+      display: inline-block;
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--green-health);
+      background: rgba(21, 148, 71, 0.1);
+      padding: 0.22rem 0.75rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 0.5rem;
+    }
+
+    .rep-name {
+      font-size: 1.25rem;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin-bottom: 1rem;
+    }
+
+    .rep-phone-btn {
+      width: 100%;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      padding: 0.75rem 1rem;
+      border-radius: var(--radius-md);
+      background: var(--bg-soft-blue);
+      color: var(--navy-deep);
+      font-weight: 800;
+      font-size: 1rem;
+      border: 1px solid var(--border-subtle);
+    }
+
+    .rep-phone-btn:hover {
+      background: var(--navy-deep);
+      color: var(--white);
+    }
+
+    /* Location Banner */
+    .location-banner {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--blue-primary) 100%);
+      color: var(--white);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 2rem;
+      box-shadow: var(--shadow-md);
+    }
+
+    .location-info h3 {
+      font-size: 1.45rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .location-info p {
+      color: rgba(255, 255, 255, 0.88);
+      font-size: 1.02rem;
+    }
+
+    /* ==========================================================================
+       12. DEDICATED CATEGORY VIEW & BREADCRUMBS
+       ========================================================================== */
+    .view-hidden {
+      display: none !important;
+    }
+
+    .category-view-hero {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, var(--blue-primary) 65%, var(--green-health) 100%);
+      color: var(--white);
+      padding: 3rem 0;
+    }
+
+    .breadcrumb-nav {
+      margin-bottom: 1.5rem;
+      font-size: 0.88rem;
+    }
+
+    .breadcrumb-list {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 0.5rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .breadcrumb-list a:hover {
+      color: var(--white);
+      text-decoration: underline;
+    }
+
+    .category-hero-layout {
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 2rem;
+      align-items: center;
+    }
+
+    .category-hero-art {
+      width: 140px;
+      height: 140px;
+      background: rgba(255, 255, 255, 0.14);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      border-radius: var(--radius-lg);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      backdrop-filter: blur(8px);
+    }
+
+    .subcategory-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin: 1.5rem 0 2.25rem;
+    }
+
+    .subcategory-pill {
+      background: var(--white);
+      border: 1px solid var(--border-subtle);
+      color: var(--navy-deep);
+      padding: 0.45rem 1rem;
+      border-radius: var(--radius-pill);
+      font-size: 0.85rem;
+      font-weight: 700;
+      box-shadow: var(--shadow-sm);
+    }
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .product-card {
+      background: var(--white);
+      border-radius: var(--radius-md);
+      border: 1px solid var(--border-subtle);
+      padding: 1.6rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+    }
+
+    .product-card:hover {
+      transform: translateY(-4px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--blue-primary);
+    }
+
+    .product-badge {
+      display: inline-block;
+      font-size: 0.72rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--blue-primary);
+      background: rgba(8, 102, 178, 0.09);
+      padding: 0.2rem 0.65rem;
+      border-radius: var(--radius-pill);
+      margin-bottom: 0.75rem;
+      align-self: flex-start;
+    }
+
+    .product-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      color: var(--navy-deep);
+      margin-bottom: 0.5rem;
+    }
+
+    .product-desc {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      margin-bottom: 1rem;
+    }
+
+    .product-meta {
+      font-size: 0.8rem;
+      background: var(--bg-soft-blue);
+      padding: 0.6rem 0.85rem;
+      border-radius: var(--radius-sm);
+      color: var(--text-dark);
+      margin-bottom: 1.25rem;
+    }
+
+    .product-actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+
+    .product-actions .btn {
+      flex: 1;
+      padding: 0.6rem 0.9rem;
+      font-size: 0.84rem;
+    }
+
+    .disclaimer-box {
+      background: var(--white);
+      border-left: 4px solid var(--blue-primary);
+      padding: 1.15rem 1.5rem;
+      border-radius: var(--radius-sm);
+      box-shadow: var(--shadow-sm);
+      font-size: 0.86rem;
+      color: var(--text-muted);
+      margin-bottom: 2rem;
+    }
+
+    /* ==========================================================================
+       13. MODAL FOR PRODUCT DETAILS & WHATSAPP CONFIGURATION
+       ========================================================================== */
+    .modal-backdrop {
+      position: fixed;
+      inset: 0;
+      background: rgba(6, 59, 112, 0.65);
+      backdrop-filter: blur(5px);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.25rem;
+      z-index: 2000;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.25s ease;
+    }
+
+    .modal-backdrop.open {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .modal-dialog {
+      background: var(--white);
+      width: 100%;
+      max-width: 560px;
+      border-radius: var(--radius-lg);
+      box-shadow: var(--shadow-lg);
+      overflow: hidden;
+      transform: translateY(16px);
+      transition: transform 0.25s ease;
+    }
+
+    .modal-backdrop.open .modal-dialog {
+      transform: translateY(0);
+    }
+
+    .modal-header {
+      background: linear-gradient(135deg, var(--navy-deep), var(--blue-primary));
+      color: var(--white);
+      padding: 1.35rem 1.6rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+    }
+
+    .modal-header h3 {
+      font-size: 1.2rem;
+      font-weight: 800;
+    }
+
+    .modal-close-btn {
+      background: rgba(255, 255, 255, 0.15);
+      color: var(--white);
+      border: none;
+      width: 34px;
+      height: 34px;
+      border-radius: 50%;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .modal-close-btn:hover {
+      background: rgba(255, 255, 255, 0.3);
+    }
+
+    .modal-body {
+      padding: 1.6rem;
+    }
+
+    .modal-field {
+      margin-bottom: 1rem;
+    }
+
+    .modal-field-label {
+      font-size: 0.75rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--text-muted);
+      margin-bottom: 0.2rem;
+    }
+
+    .modal-field-value {
+      font-size: 0.96rem;
+      color: var(--text-dark);
+      font-weight: 600;
+    }
+
+    /* ==========================================================================
+       14. FOOTER & FLOATING WHATSAPP BUTTON
+       ========================================================================== */
+    .site-footer {
+      background-color: #04294F;
+      color: rgba(255, 255, 255, 0.86);
+      padding: 4rem 0 2rem;
+      margin-top: auto;
+    }
+
+    .footer-tagline-banner {
+      text-align: center;
+      padding-bottom: 2.5rem;
+      margin-bottom: 2.5rem;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .footer-tagline-text {
+      font-size: clamp(1.05rem, 2.2vw, 1.4rem);
+      font-weight: 800;
+      color: #6ee787;
+      letter-spacing: 0.02em;
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr 1.2fr;
+      gap: 2.25rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col h4 {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.55rem;
+    }
+
+    .footer-links a {
+      font-size: 0.9rem;
+      color: rgba(255, 255, 255, 0.8);
+    }
+
+    .footer-links a:hover {
+      color: #6ee787;
+    }
+
+    .footer-bottom {
+      padding-top: 1.75rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1rem;
+      font-size: 0.84rem;
+      color: rgba(255, 255, 255, 0.7);
+    }
+
+    .floating-wa-btn {
+      position: fixed;
+      bottom: 1.5rem;
+      right: 1.5rem;
+      z-index: 1500;
+      background: linear-gradient(135deg, var(--green-health), #0e7033);
+      color: var(--white);
+      border: 2px solid var(--white);
+      border-radius: var(--radius-pill);
+      padding: 0.8rem 1.25rem;
+      display: flex;
+      align-items: center;
+      gap: 0.55rem;
+      font-weight: 800;
+      font-size: 0.9rem;
+      box-shadow: 0 12px 28px rgba(21, 148, 71, 0.4);
+    }
+
+    .floating-wa-btn:hover {
+      transform: translateY(-3px) scale(1.02);
+    }
+
+    /* ==========================================================================
+       15. RESPONSIVE MEDIA QUERIES
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid,
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+      .categories-grid,
+      .products-grid,
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .advantages-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .showcase-strip {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .mobile-menu-toggle {
+        display: inline-flex;
+      }
+      .main-nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: var(--white);
+        border-bottom: 1px solid var(--border-subtle);
+        box-shadow: var(--shadow-md);
+        padding: 1rem 1.25rem;
+        display: none;
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .main-nav.open {
+        display: flex;
+      }
+      .nav-list {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .nav-link {
+        padding: 0.75rem 1rem;
+      }
+      .header-actions .btn-whatsapp span {
+        display: none;
+      }
+      .header-actions .btn-whatsapp {
+        padding: 0.65rem;
+      }
+      .categories-grid,
+      .products-grid,
+      .team-grid,
+      .advantages-grid,
+      .about-points {
+        grid-template-columns: 1fr;
+      }
+      .showcase-strip {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .location-banner {
+        flex-direction: column;
+        text-align: center;
+      }
+      .category-hero-layout {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========================================================================
+       TOP DESIGNER CREDIT BAR — ALI GRAPHICS (03118322287)
+       ======================================================================== -->
+  <div class="designer-credit-bar" role="region" aria-label="Designer Credit">
+    <a
+      href="https://wa.me/923118322287"
+      target="_blank"
+      rel="noopener noreferrer"
+      class="designer-credit-link"
+      aria-label="Design and Print by Ali Graphics — Contact Ali Graphics on WhatsApp at 03118322287"
+    >
+      <span>Design and Print by <strong>Ali Graphics</strong></span>
+      <span class="designer-credit-badge">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+        </svg>
+        03118322287
+      </span>
+    </a>
+  </div>
+
+  <!-- ========================================================================
+       SITE HEADER
+       ======================================================================== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#home" class="brand-link" aria-label="K.G. Enterprises — Khanx Group Home">
+        <!-- Custom Inline SVG Logo: K & G Monogram + Healthcare Cross + Mountain Geometry -->
+        <div class="brand-logo-wrap" aria-hidden="true">
+          <svg viewBox="0 0 64 64" width="48" height="48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="64" height="64" rx="12" fill="#063B70"/>
+            <!-- Mountain Silhouette Backdrop -->
+            <path d="M6 48L22 28L34 40L44 26L58 48H6Z" fill="#0866B2" opacity="0.55"/>
+            <path d="M14 48L28 33L40 44L50 34L58 48H14Z" fill="#159447" opacity="0.75"/>
+            <!-- Medical Cross Badge -->
+            <path d="M29 10H35V16H41V22H35V28H29V22H23V16H29V10Z" fill="#35C759"/>
+            <!-- K.G Monogram Typography -->
+            <text x="32" y="53" text-anchor="middle" fill="#FFFFFF" font-family="system-ui, sans-serif" font-weight="900" font-size="18" letter-spacing="1">K·G</text>
+          </svg>
+        </div>
+        <div class="brand-text">
+          <span class="brand-group-tag">KHANX GROUP</span>
+          <span class="brand-name">K.G ENTERPRISES</span>
+          <span class="brand-subtitle">Pharmaceutical Wholesale &amp; Distribution</span>
+        </div>
+      </a>
+
+      <nav class="main-nav" id="mainNav" aria-label="Primary Navigation">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link active" data-nav="home">Home</a></li>
+          <li><a href="#about" class="nav-link" data-nav="about">About Us</a></li>
+          <li><a href="#categories" class="nav-link" data-nav="categories">Product Categories</a></li>
+          <li><a href="#advantages" class="nav-link" data-nav="advantages">Why Choose Us</a></li>
+          <li><a href="#representatives" class="nav-link" data-nav="representatives">Contact Team</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button
+          type="button"
+          class="btn btn-whatsapp"
+          data-wa-inquiry="General Wholesale & Distribution Inquiry"
+          aria-label="Contact K.G Enterprises on WhatsApp"
+        >
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+          </svg>
+          <span>WhatsApp Inquiry</span>
+        </button>
+
+        <button
+          type="button"
+          class="mobile-menu-toggle"
+          id="mobileMenuBtn"
+          aria-expanded="false"
+          aria-controls="mainNav"
+          aria-label="Toggle navigation menu"
+        >
+          <svg width="24" height="24" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2.2" fill="none" stroke-linecap="round">
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       MAIN CONTENT AREA (HOME VIEW + DYNAMIC CATEGORY VIEWS)
+       ======================================================================== -->
+  <main id="appMain">
+
+    <!-- ======================= 1. HOMEPAGE VIEW ======================= -->
+    <div id="homeView">
+
+      <!-- HERO SECTION -->
+      <section class="hero-section" aria-labelledby="heroHeading">
+        <div class="hero-bg-graphics" aria-hidden="true">
+          <!-- Mountain & Valley SVG Backdrop inspired by Dir Upper landscape -->
+          <svg class="hero-mountain-svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+            <path fill="rgba(21, 148, 71, 0.22)" d="M0,224L120,176C240,128,480,32,720,48C960,64,1200,192,1320,256L1440,320L1440,320L0,320Z"></path>
+            <path fill="rgba(8, 102, 178, 0.30)" d="M0,256L160,192L360,272L600,128L880,256L1140,144L1440,240L1440,320L0,320Z"></path>
+            <path fill="#F2F8FC" d="M0,296L240,250L520,292L840,236L1160,284L1440,252L1440,320L0,320Z"></path>
+          </svg>
+        </div>
+
+        <div class="container hero-grid">
+          <div class="hero-content">
+            <div class="hero-pill-badge">
+              <span class="hero-pill-dot"></span>
+              <span>K.G ENTERPRISES — KHANX GROUP</span>
+            </div>
+
+            <h1 id="heroHeading" class="hero-title">
+              Trusted Pharmaceutical <span>Wholesale &amp; Distribution</span>
+            </h1>
+
+            <p class="hero-lead">
+              Supplying genuine medicines, surgical consumables, and essential healthcare categories with dependable logistics, careful storage, and long-term regional partnerships.
+            </p>
+
+            <div>
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Dir%20(U)%20Sundrwal%20Camp%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="hero-location-chip"
+                aria-label="View Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan on Google Maps"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#35C759" stroke-width="2.2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan</span>
+              </a>
+            </div>
+
+            <div class="hero-cta-group">
+              <a href="#categories" class="btn btn-whatsapp">
+                <span>Explore Our Products</span>
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+              <button
+                type="button"
+                class="btn btn-outline-light"
+                data-wa-inquiry="General Wholesale Distribution Partnership"
+              >
+                Contact Us on WhatsApp
+              </button>
+            </div>
+          </div>
+
+          <!-- Right-side Custom SVG Pharmaceutical Distribution Graphic -->
+          <div class="hero-visual-card" aria-label="Pharmaceutical Supply Overview">
+            <div class="hero-visual-header">
+              <span class="hero-visual-title">PHARMACEUTICAL SUPPLY HUB</span>
+              <span class="hero-visual-tag">KHANX GROUP</span>
+            </div>
+
+            <svg viewBox="0 0 420 210" width="100%" height="auto" role="img" aria-label="Illustrated pharmaceutical shelves, mountain horizon, and healthcare emblem">
+              <defs>
+                <linearGradient id="shelfBg" x1="0" y1="0" x2="1" y2="1">
+                  <stop offset="0%" stop-color="#063B70"/>
+                  <stop offset="100%" stop-color="#0d6e4c"/>
+                </linearGradient>
+              </defs>
+              <rect width="420" height="210" rx="14" fill="url(#shelfBg)"/>
+              <!-- Mountain & Green Valley Graphic -->
+              <path d="M0 165 L75 105 L145 150 L230 85 L315 145 L375 110 L420 150 L420 210 L0 210 Z" fill="#159447" opacity="0.35"/>
+              <!-- Pharmacy Shelf Rows -->
+              <rect x="24" y="36" width="250" height="8" rx="4" fill="#EAF0F5" opacity="0.35"/>
+              <rect x="24" y="96" width="250" height="8" rx="4" fill="#EAF0F5" opacity="0.35"/>
+              <rect x="24" y="156" width="250" height="8" rx="4" fill="#EAF0F5" opacity="0.35"/>
+              <!-- Medicine Boxes & Bottles Row 1 -->
+              <rect x="36" y="14" width="28" height="22" rx="3" fill="#35C759"/>
+              <rect x="70" y="10" width="22" height="26" rx="3" fill="#FFFFFF"/>
+              <rect x="98" y="16" width="34" height="20" rx="3" fill="#0866B2"/>
+              <rect x="138" y="12" width="26" height="24" rx="3" fill="#EAF0F5"/>
+              <rect x="170" y="15" width="32" height="21" rx="3" fill="#35C759"/>
+              <!-- Row 2 -->
+              <rect x="36" y="68" width="24" height="28" rx="4" fill="#FFFFFF"/>
+              <rect x="66" y="72" width="38" height="24" rx="4" fill="#35C759"/>
+              <rect x="110" y="64" width="24" height="32" rx="4" fill="#0866B2"/>
+              <rect x="140" y="70" width="42" height="26" rx="4" fill="#FFFFFF"/>
+              <rect x="188" y="66" width="30" height="30" rx="4" fill="#159447"/>
+              <!-- Row 3 -->
+              <rect x="36" y="124" width="44" height="32" rx="4" fill="#0866B2"/>
+              <rect x="86" y="128" width="30" height="28" rx="4" fill="#FFFFFF"/>
+              <rect x="122" y="122" width="36" height="34" rx="4" fill="#35C759"/>
+              <rect x="164" y="126" width="48" height="30" rx="4" fill="#EAF0F5"/>
+              <!-- Healthcare Shield Emblem -->
+              <circle cx="344" cy="105" r="48" fill="#FFFFFF" opacity="0.14"/>
+              <circle cx="344" cy="105" r="36" fill="#FFFFFF"/>
+              <path d="M337 83 H351 V98 H366 V112 H351 V127 H337 V112 H322 V98 H337 Z" fill="#159447"/>
+            </svg>
+
+            <div class="hero-mini-grid">
+              <a href="#category/tablets" class="hero-mini-item">Tablets</a>
+              <a href="#category/capsules" class="hero-mini-item">Capsules</a>
+              <a href="#category/syrups" class="hero-mini-item">Syrups</a>
+              <a href="#category/injections" class="hero-mini-item">Injections</a>
+              <a href="#category/iv-fluids" class="hero-mini-item">IV Fluids</a>
+              <a href="#category/medical-devices" class="hero-mini-item">Devices</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY INTRODUCTION SECTION -->
+      <section id="about" class="section section-alt" aria-labelledby="aboutHeading">
+        <div class="container about-grid">
+          <div>
+            <span class="section-eyebrow">Corporate Overview</span>
+            <h2 id="aboutHeading" class="section-title">Dedicated to Reliable Pharmaceutical Wholesale &amp; Supply</h2>
+            <p class="section-desc" style="margin-bottom: 1.15rem;">
+              Operating from <strong>Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa</strong>, <strong>K.G. Enterprises (Khanx Group)</strong> serves pharmacies, clinics, and healthcare providers with structured wholesale distribution across core pharmaceutical and medical device categories.
+            </p>
+            <p class="section-desc">
+              Our operations focus on responsible sourcing, organized product handling, responsive communication, and building dependable long-term commercial relationships across the region.
+            </p>
+
+            <div class="about-points">
+              <div class="about-point">
+                <div class="about-point-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M20 6L9 17l-5-5"/></svg>
+                </div>
+                <div>
+                  <h3>Genuine Products</h3>
+                  <p>Focused on authentic pharmaceutical formulations and reliable supply channels.</p>
+                </div>
+              </div>
+              <div class="about-point">
+                <div class="about-point-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+                </div>
+                <div>
+                  <h3>Timely Distribution</h3>
+                  <p>Streamlined dispatch coordination for regional retail and clinical buyers.</p>
+                </div>
+              </div>
+              <div class="about-point">
+                <div class="about-point-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </div>
+                <div>
+                  <h3>Quality Handling</h3>
+                  <p>Organized category storage for tablets, syrups, injectables, and infusions.</p>
+                </div>
+              </div>
+              <div class="about-point">
+                <div class="about-point-icon" aria-hidden="true">
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/></svg>
+                </div>
+                <div>
+                  <h3>Strong Partnerships</h3>
+                  <p>Direct access to management and sales representatives for smooth ordering.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-card">
+            <span class="hero-pill-badge" style="margin-bottom: 1rem;">KHANX GROUP IDENTITY</span>
+            <h3 style="font-size: 1.65rem; font-weight: 900; margin-bottom: 1rem; line-height: 1.25;">
+              Connecting Healthcare Providers with Essential Medical Supplies
+            </h3>
+            <p style="color: rgba(255,255,255,0.88); margin-bottom: 1.5rem; font-size: 0.96rem;">
+              Whether you are inquiring about solid oral dosage categories, liquid formulations, parenteral solutions, or essential clinical devices, our team provides direct wholesale coordination.
+            </p>
+            <div style="background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); border-radius: 12px; padding: 1.15rem; margin-bottom: 1.5rem;">
+              <div style="font-size: 0.78rem; text-transform: uppercase; letter-spacing: 0.08em; color: #98f5ab; font-weight: 800;">Primary Distribution Base</div>
+              <div style="font-size: 1.05rem; font-weight: 700; margin-top: 0.25rem;">Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan</div>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.75rem;">
+              <a href="#categories" class="btn btn-whatsapp">Browse 6 Product Categories</a>
+              <a href="#representatives" class="btn btn-outline-light">View Team Contacts</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- INTERACTIVE PHARMACEUTICAL PRODUCT CATEGORIES -->
+      <section id="categories" class="section" aria-labelledby="categoriesHeading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Wholesale Portfolio</span>
+            <h2 id="categoriesHeading" class="section-title">Pharmaceutical Product Categories</h2>
+            <p class="section-desc">
+              Select any category below to open its dedicated view with illustrative product groupings, packaging formats, and direct WhatsApp wholesale inquiry options.
+            </p>
+          </div>
+
+          <div class="categories-grid" id="categoriesGrid">
+            <!-- Populated dynamically by JavaScript for consistency -->
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY ADVANTAGES (4 CORPORATE VALUE PROPOSITIONS) -->
+      <section id="advantages" class="section section-alt" aria-labelledby="advantagesHeading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Core Pillars</span>
+            <h2 id="advantagesHeading" class="section-title">Why Partner With K.G. Enterprises</h2>
+            <p class="section-desc">
+              Built on integrity, regional accessibility, and consistent coordination for pharmacies and healthcare institutions.
+            </p>
+          </div>
+
+          <div class="advantages-grid">
+            <!-- 1. Genuine Medicines -->
+            <article class="advantage-card">
+              <div class="advantage-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#159447" stroke-width="2.2">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                  <path d="M9 12l2 2 4-4"/>
+                </svg>
+              </div>
+              <h3 class="advantage-title">Genuine Medicines</h3>
+              <p class="advantage-tagline">Original &amp; Reliable</p>
+              <p class="advantage-desc">Dedicated to supplying authentic pharmaceutical lines sourced through responsible distribution channels.</p>
+            </article>
+
+            <!-- 2. Safe & Quality -->
+            <article class="advantage-card">
+              <div class="advantage-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0866B2" stroke-width="2.2">
+                  <path d="M22 12h-4l-3 9L9 3l-3 9H2"/>
+                </svg>
+              </div>
+              <h3 class="advantage-title">Safe &amp; Quality</h3>
+              <p class="advantage-tagline">For a Healthier Tomorrow</p>
+              <p class="advantage-desc">Attentive handling and organized storage across oral, injectable, and medical device product groups.</p>
+            </article>
+
+            <!-- 3. On-Time Delivery -->
+            <article class="advantage-card">
+              <div class="advantage-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#159447" stroke-width="2.2">
+                  <rect x="1" y="3" width="15" height="13" rx="2"/>
+                  <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+                  <circle cx="5.5" cy="18.5" r="2.5"/>
+                  <circle cx="18.5" cy="18.5" r="2.5"/>
+                </svg>
+              </div>
+              <h3 class="advantage-title">On-Time Delivery</h3>
+              <p class="advantage-tagline">Across the Region</p>
+              <p class="advantage-desc">Responsive order processing and dispatch alignment to keep regional healthcare shelves supplied.</p>
+            </article>
+
+            <!-- 4. Strong Partnership -->
+            <article class="advantage-card">
+              <div class="advantage-icon" aria-hidden="true">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#0866B2" stroke-width="2.2">
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+              </div>
+              <h3 class="advantage-title">Strong Partnership</h3>
+              <p class="advantage-tagline">For Long-Term Growth</p>
+              <p class="advantage-desc">Collaborative wholesale support tailored to the ongoing needs of pharmacies and clinical buyers.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCT SHOWCASE STRIP (INSPIRED BY BOTTOM STRIP OF REFERENCE) -->
+      <section class="section section-neutral" aria-labelledby="showcaseHeading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Quick Category Strip</span>
+            <h2 id="showcaseHeading" class="section-title">Complete Distribution Lineup</h2>
+            <p class="section-desc">Direct visual access to all six pharmaceutical and medical supply divisions.</p>
+          </div>
+
+          <div class="showcase-strip" id="showcaseStrip">
+            <!-- Populated dynamically by JavaScript -->
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPANY REPRESENTATIVES & LOCATION SECTION -->
+      <section id="representatives" class="section section-alt" aria-labelledby="repsHeading">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-eyebrow">Direct Leadership &amp; Sales Contacts</span>
+            <h2 id="repsHeading" class="section-title">Company Representatives</h2>
+            <p class="section-desc">
+              Connect directly with our leadership and sales management team by phone for wholesale inquiries and distribution coordination.
+            </p>
+          </div>
+
+          <div class="team-grid">
+            <!-- Representative 1: Maaz ur Rahman -->
+            <article class="rep-card">
+              <div class="rep-avatar" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="rep-role">Manager</span>
+              <h3 class="rep-name">Maaz ur Rahman</h3>
+              <a href="tel:03481889622" class="rep-phone-btn" aria-label="Call Manager Maaz ur Rahman at 0348 1889622">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>0348 1889622</span>
+              </a>
+            </article>
+
+            <!-- Representative 2: Muhammad Huzifa -->
+            <article class="rep-card">
+              <div class="rep-avatar" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="rep-role">Owner &amp; CEO</span>
+              <h3 class="rep-name">Muhammad Huzifa</h3>
+              <a href="tel:03029218126" class="rep-phone-btn" aria-label="Call Owner and CEO Muhammad Huzifa at 0302 9218126">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>0302 9218126</span>
+              </a>
+            </article>
+
+            <!-- Representative 3: Ubaid Ullah -->
+            <article class="rep-card">
+              <div class="rep-avatar" aria-hidden="true">
+                <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                  <circle cx="12" cy="7" r="4"/>
+                </svg>
+              </div>
+              <span class="rep-role">Sales Manager</span>
+              <h3 class="rep-name">Ubaid Ullah</h3>
+              <a href="tel:03289069545" class="rep-phone-btn" aria-label="Call Sales Manager Ubaid Ullah at 0328 9069545">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+                <span>0328 9069545</span>
+              </a>
+            </article>
+          </div>
+
+          <!-- Location & Google Maps Integration -->
+          <div class="location-banner">
+            <div class="location-info">
+              <span class="hero-pill-badge" style="margin-bottom: 0.65rem;">Regional Distribution Office</span>
+              <h3>Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan</h3>
+              <p>Click to view the area on Google Maps or reach out via WhatsApp and direct representative phone lines.</p>
+            </div>
+            <div style="display: flex; flex-wrap: wrap; gap: 0.85rem; flex-shrink: 0;">
+              <a
+                href="https://www.google.com/maps/search/?api=1&query=Dir%20(U)%20Sundrwal%20Camp%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-whatsapp"
+              >
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                  <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+                <span>Open in Google Maps</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================= 2. DEDICATED CATEGORY VIEW ======================= -->
+    <div id="categoryView" class="view-hidden" aria-live="polite">
+      <section class="category-view-hero">
+        <div class="container">
+          <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+            <ol class="breadcrumb-list">
+              <li><a href="#home">Home</a></li>
+              <li aria-hidden="true">/</li>
+              <li><a href="#categories">Product Categories</a></li>
+              <li aria-hidden="true">/</li>
+              <li id="breadcrumbCurrent" aria-current="page" style="color: #6ee787; font-weight: 700;">Category</li>
+            </ol>
+          </nav>
+
+          <div class="category-hero-layout">
+            <div>
+              <span class="hero-pill-badge">K.G ENTERPRISES — CATEGORY PORTFOLIO</span>
+              <h1 id="catViewTitle" style="font-size: clamp(2rem, 3.6vw, 2.85rem); font-weight: 900; margin-bottom: 0.75rem;">Category Title</h1>
+              <p id="catViewIntro" style="font-size: 1.05rem; color: rgba(255,255,255,0.9); max-width: 720px; margin-bottom: 1.5rem;"></p>
+              <div style="display: flex; flex-wrap: wrap; gap: 0.85rem;">
+                <button type="button" id="catHeroWaBtn" class="btn btn-whatsapp">
+                  Inquire About This Category on WhatsApp
+                </button>
+                <a href="#categories" class="btn btn-outline-light">
+                  &larr; Back to All Categories
+                </a>
+                <a href="#home" class="btn btn-outline-light">
+                  Homepage
+                </a>
+              </div>
+            </div>
+            <div class="category-hero-art" id="catViewHeroArt" aria-hidden="true"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="container">
+          <div class="disclaimer-box">
+            <strong>Illustrative Category Overview:</strong> The groupings below represent standard pharmaceutical wholesale classifications handled by K.G. Enterprises. They are provided for business inquiry orientation and do not represent real-time stock quantities, brand-specific pricing, or clinical prescribing advice.
+          </div>
+
+          <h2 style="font-size: 1.25rem; font-weight: 800; color: var(--navy-deep);">Subcategory Groupings</h2>
+          <div class="subcategory-pills" id="catSubcategories"></div>
+
+          <h2 style="font-size: 1.45rem; font-weight: 800; color: var(--navy-deep); margin-bottom: 1.25rem;">Product Information Cards</h2>
+          <div class="products-grid" id="catProductsGrid"></div>
+
+          <div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 1rem; padding-top: 1.5rem; border-top: 1px solid var(--border-subtle);">
+            <a href="#categories" class="btn btn-secondary">&larr; Back to Categories</a>
+            <a href="#home" class="btn btn-primary">Return to Homepage</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- ======================= 3. NOT-FOUND (404) ROUTE VIEW ======================= -->
+    <div id="notFoundView" class="view-hidden" aria-live="polite">
+      <section class="section">
+        <div class="container" style="text-align: center; max-width: 620px;">
+          <span class="section-eyebrow">Route Not Found</span>
+          <h1 class="section-title">Requested Category View Not Found</h1>
+          <p class="section-desc" style="margin-bottom: 2rem;">
+            The category route you entered does not match one of our six wholesale divisions. Please return to the homepage or select a valid product category below.
+          </p>
+          <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+            <a href="#home" class="btn btn-primary">Return to Homepage</a>
+            <a href="#categories" class="btn btn-whatsapp">Browse All 6 Categories</a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  </main>
+
+  <!-- ========================================================================
+       PRODUCT DETAILS & WHATSAPP CONFIGURATION MODAL
+       ======================================================================== -->
+  <div class="modal-backdrop" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-header">
+        <h3 id="modalTitle">Product Category Details</h3>
+        <button type="button" class="modal-close-btn" id="modalCloseBtn" aria-label="Close modal">&times;</button>
+      </div>
+      <div class="modal-body" id="modalBody">
+        <!-- Populated dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       FLOATING WHATSAPP INQUIRY BUTTON
+       ======================================================================== -->
+  <button
+    type="button"
+    class="floating-wa-btn"
+    data-wa-inquiry="General Wholesale & Distribution Inquiry"
+    aria-label="Open WhatsApp Wholesale Inquiry for K.G Enterprises"
+  >
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+      <path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91C2.13 13.66 2.59 15.36 3.45 16.86L2.05 22L7.3 20.62C8.75 21.41 10.38 21.83 12.04 21.83C17.5 21.83 21.95 17.38 21.95 11.92C21.95 9.27 20.92 6.78 19.05 4.91C17.18 3.03 14.69 2 12.04 2Z"/>
+    </svg>
+    <span>WhatsApp Inquiry</span>
+  </button>
+
+  <!-- ========================================================================
+       PROFESSIONAL FOOTER
+       ======================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-tagline-banner">
+        <p class="footer-tagline-text">“Quality Medicines | Healthy Communities | A Stronger Tomorrow”</p>
+      </div>
+
+      <div class="footer-grid">
+        <!-- Col 1: Brand -->
+        <div class="footer-col">
+          <div style="font-size: 0.75rem; font-weight: 800; color: #6ee787; letter-spacing: 0.12em;">KHANX GROUP</div>
+          <h4 style="font-size: 1.3rem; margin-bottom: 0.35rem;">K.G ENTERPRISES</h4>
+          <p style="font-size: 0.86rem; color: rgba(255,255,255,0.75); margin-bottom: 1rem;">
+            Pharmaceutical Wholesale &amp; Distribution serving regional pharmacies, clinics, and healthcare facilities.
+          </p>
+          <p style="font-size: 0.85rem;">
+            <a
+              href="https://www.google.com/maps/search/?api=1&query=Dir%20(U)%20Sundrwal%20Camp%2C%20Khyber%20Pakhtunkhwa%2C%20Pakistan"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: #98f5ab; text-decoration: underline;"
+            >
+              Dir (U) Sundrwal Camp, Khyber Pakhtunkhwa, Pakistan
+            </a>
+          </p>
+        </div>
+
+        <!-- Col 2: Product Categories -->
+        <div class="footer-col">
+          <h4>Product Categories</h4>
+          <ul class="footer-links">
+            <li><a href="#category/tablets">Tablets</a></li>
+            <li><a href="#category/capsules">Capsules</a></li>
+            <li><a href="#category/syrups">Syrups</a></li>
+            <li><a href="#category/injections">Injections</a></li>
+            <li><a href="#category/iv-fluids">IV Fluids</a></li>
+            <li><a href="#category/medical-devices">Medical Devices</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Direct Team Numbers -->
+        <div class="footer-col">
+          <h4>Leadership &amp; Sales</h4>
+          <ul class="footer-links">
+            <li><a href="tel:03029218126">Muhammad Huzifa (Owner &amp; CEO): 0302 9218126</a></li>
+            <li><a href="tel:03481889622">Maaz ur Rahman (Manager): 0348 1889622</a></li>
+            <li><a href="tel:03289069545">Ubaid Ullah (Sales Manager): 0328 9069545</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 4: Inquiries & Designer Credit -->
+        <div class="footer-col">
+          <h4>Wholesale Inquiries</h4>
+          <p style="font-size: 0.85rem; margin-bottom: 0.85rem;">
+            Company WhatsApp Placeholder:<br/>
+            <button
+              type="button"
+              data-wa-inquiry="Footer Wholesale Inquiry"
+              style="background: none; border: none; color: #6ee787; font-weight: 700; text-decoration: underline; padding: 0; text-align: left;"
+            >
+              [INSERT VERIFIED COMPANY WHATSAPP NUMBER]
+            </button>
+          </p>
+          <p style="font-size: 0.82rem; padding-top: 0.75rem; border-top: 1px solid rgba(255,255,255,0.12);">
+            <a
+              href="https://wa.me/923118322287"
+              target="_blank"
+              rel="noopener noreferrer"
+              style="color: rgba(255,255,255,0.85);"
+            >
+              Design and Print by <strong>Ali Graphics</strong> (WhatsApp: 03118322287)
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; <span id="currentYear"></span> <strong>K.G. ENTERPRISES — KHANX GROUP</strong>. All rights reserved.
+        </div>
+        <div>
+          <a
+            href="https://wa.me/923118322287"
+            target="_blank"
+            rel="noopener noreferrer"
+            style="color: #6ee787;"
+          >
+            Design and Print by Ali Graphics — 03118322287
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       APPLICATION JAVASCRIPT
+       ======================================================================== -->
+  <script>
+    (function () {
+      "use strict";
+
+      /* ----------------------------------------------------------------------
+         1. COMPANY WHATSAPP CONFIGURATION
+         Keep as placeholder until the official verified company WhatsApp number
+         is provided. Never confuse with Ali Graphics' number (03118322287).
+         To activate direct WhatsApp routing later, replace the string below
+         with digits in international format, e.g. "923001234567".
+      ---------------------------------------------------------------------- */
+      const COMPANY_WHATSAPP_NUMBER = "[INSERT VERIFIED COMPANY WHATSAPP NUMBER]";
+
+      /* ----------------------------------------------------------------------
+         2. CUSTOM INLINE SVG ILLUSTRATIONS FOR ALL 6 CATEGORIES
+      ---------------------------------------------------------------------- */
+      const CATEGORY_SVGS = {
+        "tablets": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="12" y="14" width="60" height="62" rx="8" fill="#0866B2" opacity="0.15" stroke="#0866B2" stroke-width="2"/>
+            <circle cx="30" cy="30" r="7" fill="#FFFFFF" stroke="#063B70" stroke-width="2"/>
+            <line x1="25" y1="30" x2="35" y2="30" stroke="#159447" stroke-width="2"/>
+            <circle cx="54" cy="30" r="7" fill="#FFFFFF" stroke="#063B70" stroke-width="2"/>
+            <line x1="49" y1="30" x2="59" y2="30" stroke="#159447" stroke-width="2"/>
+            <circle cx="30" cy="54" r="7" fill="#FFFFFF" stroke="#063B70" stroke-width="2"/>
+            <circle cx="54" cy="54" r="7" fill="#FFFFFF" stroke="#063B70" stroke-width="2"/>
+            <circle cx="88" cy="52" r="18" fill="#159447"/>
+            <line x1="76" y1="52" x2="100" y2="52" stroke="#FFFFFF" stroke-width="3"/>
+          </svg>
+        `,
+        "capsules": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <g transform="rotate(-28 48 45)">
+              <rect x="20" y="33" width="28" height="24" rx="12" fill="#063B70"/>
+              <rect x="44" y="33" width="28" height="24" rx="12" fill="#35C759"/>
+            </g>
+            <g transform="rotate(22 78 52)">
+              <rect x="54" y="40" width="24" height="20" rx="10" fill="#0866B2"/>
+              <rect x="74" y="40" width="24" height="20" rx="10" fill="#FFFFFF" stroke="#0866B2" stroke-width="2"/>
+            </g>
+          </svg>
+        `,
+        "syrups": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="42" y="10" width="24" height="10" rx="3" fill="#063B70"/>
+            <path d="M38 22H70L76 34V76C76 79 73 82 70 82H38C35 82 32 79 32 76V34L38 22Z" fill="#0866B2"/>
+            <rect x="38" y="42" width="32" height="26" rx="3" fill="#FFFFFF"/>
+            <path d="M51 48H57V52H61V58H57V62H51V58H47V52H51V48Z" fill="#159447"/>
+            <path d="M84 58H104L100 76H88L84 58Z" fill="#35C759" opacity="0.85"/>
+          </svg>
+        `,
+        "injections": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="24" y="38" width="24" height="40" rx="4" fill="#0866B2"/>
+            <rect x="28" y="30" width="16" height="8" rx="2" fill="#063B70"/>
+            <rect x="28" y="50" width="16" height="18" rx="2" fill="#FFFFFF"/>
+            <g transform="rotate(-35 76 46)">
+              <rect x="64" y="24" width="16" height="44" rx="3" fill="#EAF0F5" stroke="#063B70" stroke-width="2"/>
+              <rect x="66" y="42" width="12" height="24" fill="#35C759"/>
+              <line x1="72" y1="10" x2="72" y2="24" stroke="#063B70" stroke-width="2.5"/>
+              <line x1="72" y1="68" x2="72" y2="80" stroke="#063B70" stroke-width="2.5"/>
+              <line x1="65" y1="80" x2="79" y2="80" stroke="#063B70" stroke-width="2.5"/>
+            </g>
+          </svg>
+        `,
+        "iv-fluids": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect x="34" y="12" width="52" height="62" rx="10" fill="#FFFFFF" stroke="#0866B2" stroke-width="3"/>
+            <path d="M37 42H83V66C83 70 80 72 76 72H44C40 72 37 70 37 66V42Z" fill="#0866B2" opacity="0.25"/>
+            <line x1="46" y1="28" x2="62" y2="28" stroke="#159447" stroke-width="3" stroke-linecap="round"/>
+            <line x1="46" y1="36" x2="72" y2="36" stroke="#0866B2" stroke-width="2.5" stroke-linecap="round"/>
+            <path d="M60 74V86" stroke="#159447" stroke-width="3" stroke-linecap="round"/>
+          </svg>
+        `,
+        "medical-devices": `
+          <svg viewBox="0 0 120 90" width="110" height="84" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M36 18V42C36 53 45 62 56 62C67 62 76 53 76 42V18" stroke="#063B70" stroke-width="4" stroke-linecap="round"/>
+            <path d="M56 62V72C56 78 62 82 68 82H82C88 82 92 77 92 70V54" stroke="#0866B2" stroke-width="4" stroke-linecap="round"/>
+            <circle cx="92" cy="48" r="9" fill="#159447" stroke="#FFFFFF" stroke-width="2"/>
+          </svg>
+        `
+      };
+
+      /* ----------------------------------------------------------------------
+         3. STRUCTURED CATEGORY & ILLUSTRATIVE PRODUCT GROUP DATA
+      ---------------------------------------------------------------------- */
+      const CATEGORIES_DATA = [
+        {
+          slug: "tablets",
+          title: "Tablets",
+          subtitle: "Solid oral dosage forms including general, vitamin, and specialized tablet formulations.",
+          intro: "K.G. Enterprises coordinates wholesale distribution for a broad spectrum of compressed tablet formulations suited for retail pharmacies and institutional dispensaries across the region.",
+          subcategories: [
+            "General tablet products",
+            "Vitamin and mineral tablets",
+            "Other tablet formulations"
+          ],
+          products: [
+            {
+              name: "General Tablet Products [Placeholder Item]",
+              category: "Tablets",
+              subcategory: "General tablet products",
+              description: "Standard compressed oral tablet formulations supplied in protective blister packs or bulk pharmacy containers for wholesale distribution.",
+              packaging: "Blister strips / Box presentations (Placeholder specification — inquire for current catalog)"
+            },
+            {
+              name: "Vitamin & Mineral Tablets [Placeholder Item]",
+              category: "Tablets",
+              subcategory: "Vitamin and mineral tablets",
+              description: "Nutritional and micronutrient tablet formulations distributed to pharmacies and healthcare outlets.",
+              packaging: " Strip & bottle pack options (Placeholder specification — inquire for current catalog)"
+            },
+            {
+              name: "Film-Coated & Other Tablet Formulations [Placeholder Item]",
+              category: "Tablets",
+              subcategory: "Other tablet formulations",
+              description: "Specialized oral tablet presentations including coated, chewable, or dispersible dosage categories.",
+              packaging: "Standard wholesale cartons (Placeholder specification — inquire for current catalog)"
+            }
+          ]
+        },
+        {
+          slug: "capsules",
+          title: "Capsules",
+          subtitle: "Hard-shell, soft-gel, and specialized encapsulated oral pharmaceutical lines.",
+          intro: "Our capsule wholesale division covers hard gelatin shells, soft-gelatin preparations, and modified-release encapsulated product lines.",
+          subcategories: [
+            "Hard-shell capsules",
+            "Soft-gel capsules",
+            "Other capsule formulations"
+          ],
+          products: [
+            {
+              name: "Hard-Shell Capsule Line [Placeholder Item]",
+              category: "Capsules",
+              subcategory: "Hard-shell capsules",
+              description: "Two-piece encapsulated powder or pellet formulations organized for pharmacy and clinical supply.",
+              packaging: "Alu-PVC blister boxes (Placeholder specification — inquire for current catalog)"
+            },
+            {
+              name: "Soft-Gelatin Capsule Line [Placeholder Item]",
+              category: "Capsules",
+              subcategory: "Soft-gel capsules",
+              description: "Hermetically sealed soft-gelatin oral dosage forms suitable for liquid or oil-based preparations.",
+              packaging: "Blister packs & HDPE bottles (Placeholder specification — inquire for current catalog)"
+            },
+            {
+              name: "Modified & Other Capsule Formulations [Placeholder Item]",
+              category: "Capsules",
+              subcategory: "Other capsule formulations",
+              description: "Extended-release and specialty capsule classifications available for wholesale trade inquiries.",
+              packaging: "Wholesale unit cartons (Placeholder specification — inquire for current catalog)"
+            }
+          ]
+        },
+        {
+          slug: "syrups",
+          title: "Syrups",
+          subtitle: "Oral liquid formulations, suspensions, and pediatric/adult oral solutions.",
+          intro: "We distribute liquid pharmaceutical preparations including syrups, oral solutions, and dry powder suspensions with careful handling to prevent transit breakage.",
+          subcategories: [
+            "Liquid formulations",
+            "Oral solutions",
+            "Other syrup products"
+          ],
+          products: [
+            {
+              name: "Standard Liquid Syrup Formulations [Placeholder Item]",
+              category: "Syrups",
+              subcategory: "Liquid formulations",
+              description: "Flavored and unflavored oral liquid preparations packaged with measuring caps or spoons for pharmacy retail.",
+              packaging: "60ml / 120ml amber glass or PET bottles (Placeholder specification)"
+            },
+            {
+              name: "Oral Solutions & Drops [Placeholder Item]",
+              category: "Syrups",
+              subcategory: "Oral solutions",
+              description: "Clear aqueous oral solutions and calibrated dropper presentations for clinical and pharmacy buyers.",
+              packaging: "Individual boxed bottles (Placeholder specification)"
+            },
+            {
+              name: "Dry Suspensions & Other Syrup Products [Placeholder Item]",
+              category: "Syrups",
+              subcategory: "Other syrup products",
+              description: "Reconstitutable oral suspensions and specialized liquid healthcare preparations.",
+              packaging: "Sealed moisture-resistant bottles (Placeholder specification)"
+            }
+          ]
+        },
+        {
+          slug: "injections",
+          title: "Injections",
+          subtitle: "Sterile parenteral preparations in glass vials, ampoules, and injectable categories.",
+          intro: "K.G. Enterprises supplies sterile injectable product categories for clinics, hospitals, and licensed pharmacies, emphasizing careful storage and batch organization.",
+          subcategories: [
+            "Injectable product categories",
+            "Vial presentations",
+            "Ampoule presentations"
+          ],
+          products: [
+            {
+              name: "Sterile Injectable Product Categories [Placeholder Item]",
+              category: "Injections",
+              subcategory: "Injectable product categories",
+              description: "Parenteral formulations intended for professional clinical administration and hospital supply.",
+              packaging: "Unit boxes & tray packs (Placeholder specification)"
+            },
+            {
+              name: "Single & Multi-Dose Vial Presentations [Placeholder Item]",
+              category: "Injections",
+              subcategory: "Vial presentations",
+              description: "Rubber-stoppered glass vials containing sterile powder for reconstitution or ready-to-use injectable solutions.",
+              packaging: "Individual or multi-vial cartons (Placeholder specification)"
+            },
+            {
+              name: "Glass Ampoule Presentations [Placeholder Item]",
+              category: "Injections",
+              subcategory: "Ampoule presentations",
+              description: "Easy-snap sterile glass ampoules packed in protective fluted trays for safe regional distribution.",
+              packaging: "5s / 10s protective ampoule trays (Placeholder specification)"
+            }
+          ]
+        },
+        {
+          slug: "iv-fluids",
+          title: "IV Fluids",
+          subtitle: "Intravenous fluid categories, large-volume infusions, and related infusion supplies.",
+          intro: "Our intravenous fluid portfolio supports clinical facilities and healthcare centers with infusion solutions and compatible administration accessories.",
+          subcategories: [
+            "Intravenous fluid categories",
+            "Infusion solutions",
+            "Related infusion supplies"
+          ],
+          products: [
+            {
+              name: "Intravenous Fluid Categories [Placeholder Item]",
+              category: "IV Fluids",
+              subcategory: "Intravenous fluid categories",
+              description: "Large-volume sterile parenteral fluid bags and bottles for institutional clinical care.",
+              packaging: "500ml / 1000ml poly-bottles or bags (Placeholder specification)"
+            },
+            {
+              name: "Electrolyte & Infusion Solutions [Placeholder Item]",
+              category: "IV Fluids",
+              subcategory: "Infusion solutions",
+              description: "Standard hydration and sterile infusion formulations distributed in protective outer master cartons.",
+              packaging: "100ml / 500ml sterile containers (Placeholder specification)"
+            },
+            {
+              name: "IV Sets & Related Infusion Supplies [Placeholder Item]",
+              category: "IV Fluids",
+              subcategory: "Related infusion supplies",
+              description: "Sterile disposable infusion sets, cannulas, and related fluid administration consumables.",
+              packaging: "Sterile blister pouches / Boxed sets (Placeholder specification)"
+            }
+          ]
+        },
+        {
+          slug: "medical-devices",
+          title: "Medical Devices",
+          subtitle: "Diagnostic equipment, patient monitoring devices, instruments, and consumables.",
+          intro: "Beyond pharmaceutical dosage forms, K.G. Enterprises supplies essential diagnostic instruments, patient monitoring devices, and everyday medical consumables.",
+          subcategories: [
+            "Diagnostic equipment",
+            "Monitoring devices",
+            "Basic medical instruments",
+            "Medical consumables"
+          ],
+          products: [
+            {
+              name: "Clinical Diagnostic Equipment [Placeholder Item]",
+              category: "Medical Devices",
+              subcategory: "Diagnostic equipment",
+              description: "Stethoscopes, clinical thermometers, and routine examination tools for clinics and pharmacies.",
+              packaging: "Protective retail & clinical cases (Placeholder specification)"
+            },
+            {
+              name: "Patient Monitoring Devices [Placeholder Item]",
+              category: "Medical Devices",
+              subcategory: "Monitoring devices",
+              description: "Blood pressure monitors, glucometers, and pulse oximetry equipment for professional and home-care distribution.",
+              packaging: "Boxed kits with accessories (Placeholder specification)"
+            },
+            {
+              name: "Basic Medical Instruments & Consumables [Placeholder Item]",
+              category: "Medical Devices",
+              subcategory: "Medical consumables",
+              description: "Disposable syringes, surgical dressings, bandages, gloves, and routine clinical consumables.",
+              packaging: "Sterile unit packs & wholesale cartons (Placeholder specification)"
+            }
+          ]
+        }
+      ];
+
+      /* ----------------------------------------------------------------------
+         4. RENDER HOMEPAGE CATEGORY CARDS & SHOWCASE STRIP
+      ---------------------------------------------------------------------- */
+      const categoriesGridEl = document.getElementById("categoriesGrid");
+      const showcaseStripEl = document.getElementById("showcaseStrip");
+
+      function renderHomepageCategories() {
+        categoriesGridEl.innerHTML = CATEGORIES_DATA.map((cat) => `
+          <article class="category-card">
+            <div>
+              <div class="category-illustration">
+                ${CATEGORY_SVGS[cat.slug]}
+              </div>
+              <h3 class="category-title">${cat.title}</h3>
+              <p class="category-subtitle">${cat.subtitle}</p>
+            </div>
+            <div class="category-card-footer">
+              <a href="#category/${cat.slug}" class="btn btn-primary" style="width: 100%;" aria-label="Explore ${cat.title} category view">
+                <span>Explore ${cat.title}</span>
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" aria-hidden="true">
+                  <path d="M5 12h14M12 5l7 7-7 7"/>
+                </svg>
+              </a>
+            </div>
+          </article>
+        `).join("");
+
+        showcaseStripEl.innerHTML = CATEGORIES_DATA.map((cat) => `
+          <a href="#category/${cat.slug}" class="showcase-panel" aria-label="Open ${cat.title} category page">
+            <div class="showcase-art">
+              ${CATEGORY_SVGS[cat.slug]}
+            </div>
+            <div class="showcase-name">${cat.title}</div>
+            <div class="showcase-cta">View Portfolio &rarr;</div>
+          </a>
+        `).join("");
+      }
+
+      /* ----------------------------------------------------------------------
+         5. WHATSAPP INQUIRY HANDLER (WITH PLACEHOLDER GUARD)
+      ---------------------------------------------------------------------- */
+      const infoModal = document.getElementById("infoModal");
+      const modalTitle = document.getElementById("modalTitle");
+      const modalBody = document.getElementById("modalBody");
+      const modalCloseBtn = document.getElementById("modalCloseBtn");
+      let lastFocusedElement = null;
+
+      function buildPrefilledMessage(subjectName) {
+        return `Hello K.G Enterprises, I would like to inquire about your ${subjectName}. Please share the available information.`;
+      }
+
+      function openCompanyWhatsApp(subjectName) {
+        const message = buildPrefilledMessage(subjectName);
+        const cleanedDigits = COMPANY_WHATSAPP_NUMBER.replace(/\D/g, "");
+
+        // If a real international number has been configured, open wa.me directly
+        if (cleanedDigits.length >= 10 && !COMPANY_WHATSAPP_NUMBER.includes("INSERT")) {
+          const url = `https://wa.me/${cleanedDigits}?text=${encodeURIComponent(message)}`;
+          window.open(url, "_blank", "noopener,noreferrer");
+          return;
+        }
+
+        // Otherwise, show an interactive modal with the prepared message, placeholder notice, and verified phone numbers
+        openModal(
+          "Wholesale Inquiry — K.G. Enterprises",
+          `
+            <div class="modal-field">
+              <div class="modal-field-label">Prepared Inquiry Subject</div>
+              <div class="modal-field-value">${escapeHtml(subjectName)}</div>
+            </div>
+            <div class="modal-field">
+              <div class="modal-field-label">Prefilled WhatsApp Message</div>
+              <div style="background: var(--bg-soft-blue); border: 1px solid var(--border-subtle); padding: 0.85rem; border-radius: 8px; font-size: 0.9rem; color: var(--navy-deep);" id="prefilledMsgBox">${escapeHtml(message)}</div>
+            </div>
+            <div class="modal-field" style="background: rgba(21,148,71,0.08); border-left: 4px solid var(--green-health); padding: 0.75rem 1rem; border-radius: 6px; font-size: 0.84rem;">
+              <strong>Company WhatsApp Placeholder:</strong> <code>${escapeHtml(COMPANY_WHATSAPP_NUMBER)}</code><br/>
+              To enable one-click WhatsApp routing to the company line, replace <code>COMPANY_WHATSAPP_NUMBER</code> in <code>index.html</code> with the verified company WhatsApp number.
+            </div>
+            <div class="modal-field">
+              <div class="modal-field-label">Direct Representative Phone Lines (Click to Call)</div>
+              <div style="display: grid; gap: 0.5rem; margin-top: 0.45rem;">
+                <a href="tel:03029218126" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Muhammad Huzifa (Owner &amp; CEO): 0302 9218126</a>
+                <a href="tel:03481889622" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Maaz ur Rahman (Manager): 0348 1889622</a>
+                <a href="tel:03289069545" class="rep-phone-btn" style="padding: 0.55rem; font-size: 0.9rem;">Ubaid Ullah (Sales Manager): 0328 9069545</a>
+              </div>
+            </div>
+            <div style="display: flex; gap: 0.75rem; flex-wrap: wrap; margin-top: 1.25rem;">
+              <button type="button" class="btn btn-whatsapp" id="copyInquiryBtn" style="flex: 1;">Copy Inquiry Message</button>
+              <a href="https://wa.me/?text=${encodeURIComponent(message)}" target="_blank" rel="noopener noreferrer" class="btn btn-primary" style="flex: 1;">Open WhatsApp Share</a>
+            </div>
+          `
+        );
+
+        const copyBtn = document.getElementById("copyInquiryBtn");
+        if (copyBtn) {
+          copyBtn.addEventListener("click", function () {
+            if (navigator.clipboard && navigator.clipboard.writeText) {
+              navigator.clipboard.writeText(message).then(function () {
+                copyBtn.textContent = "Copied to Clipboard!";
+              });
+            }
+          });
+        }
+      }
+
+      /* ----------------------------------------------------------------------
+         6. PRODUCT DETAIL MODAL
+      ---------------------------------------------------------------------- */
+      function openProductDetailModal(product) {
+        openModal(
+          product.name,
+          `
+            <div class="modal-field">
+              <div class="modal-field-label">Product Category</div>
+              <div class="modal-field-value">${escapeHtml(product.category)} &mdash; ${escapeHtml(product.subcategory)}</div>
+            </div>
+            <div class="modal-field">
+              <div class="modal-field-label">Overview</div>
+              <div style="font-size: 0.94rem; color: var(--text-dark);">${escapeHtml(product.description)}</div>
+            </div>
+            <div class="modal-field">
+              <div class="modal-field-label">Packaging Information</div>
+              <div class="modal-field-value">${escapeHtml(product.packaging)}</div>
+            </div>
+            <div class="modal-field" style="font-size: 0.8rem; color: var(--text-muted); background: var(--bg-soft-blue); padding: 0.75rem; border-radius: 8px;">
+              Note: This entry is a category placeholder for business distribution inquiries and does not constitute medical advice or real-time stock confirmation.
+            </div>
+            <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+              <button type="button" class="btn btn-whatsapp" id="modalProductWaBtn" style="width: 100%;">
+                Inquire About This Product on WhatsApp
+              </button>
+            </div>
+          `
+        );
+
+        const waBtn = document.getElementById("modalProductWaBtn");
+        if (waBtn) {
+          waBtn.addEventListener("click", function () {
+            openCompanyWhatsApp(`${product.category} — ${product.name}`);
+          });
+        }
+      }
+
+      function openModal(titleText, bodyHtml) {
+        lastFocusedElement = document.activeElement;
+        modalTitle.textContent = titleText;
+        modalBody.innerHTML = bodyHtml;
+        infoModal.classList.add("open");
+        infoModal.setAttribute("aria-hidden", "false");
+        modalCloseBtn.focus();
+      }
+
+      function closeModal() {
+        infoModal.classList.remove("open");
+        infoModal.setAttribute("aria-hidden", "true");
+        if (lastFocusedElement) {
+          lastFocusedElement.focus();
+        }
+      }
+
+      modalCloseBtn.addEventListener("click", closeModal);
+      infoModal.addEventListener("click", function (e) {
+        if (e.target === infoModal) closeModal();
+      });
+      document.addEventListener("keydown", function (e) {
+        if (e.key === "Escape" && infoModal.classList.contains("open")) {
+          closeModal();
+        }
+      });
+
+      /* ----------------------------------------------------------------------
+         7. DEDICATED CATEGORY VIEW RENDERER & ROUTER
+      ---------------------------------------------------------------------- */
+      const homeView = document.getElementById("homeView");
+      const categoryView = document.getElementById("categoryView");
+      const notFoundView = document.getElementById("notFoundView");
+
+      const breadcrumbCurrent = document.getElementById("breadcrumbCurrent");
+      const catViewTitle = document.getElementById("catViewTitle");
+      const catViewIntro = document.getElementById("catViewIntro");
+      const catViewHeroArt = document.getElementById("catViewHeroArt");
+      const catSubcategories = document.getElementById("catSubcategories");
+      const catProductsGrid = document.getElementById("catProductsGrid");
+      const catHeroWaBtn = document.getElementById("catHeroWaBtn");
+
+      function renderCategoryView(slug) {
+        const category = CATEGORIES_DATA.find((c) => c.slug === slug);
+        if (!category) {
+          homeView.classList.add("view-hidden");
+          categoryView.classList.add("view-hidden");
+          notFoundView.classList.remove("view-hidden");
+          window.scrollTo({ top: 0, behavior: "smooth" });
+          return;
+        }
+
+        breadcrumbCurrent.textContent = category.title;
+        catViewTitle.textContent = `${category.title} — Wholesale & Distribution`;
+        catViewIntro.textContent = category.intro;
+        catViewHeroArt.innerHTML = CATEGORY_SVGS[category.slug];
+
+        catHeroWaBtn.onclick = function () {
+          openCompanyWhatsApp(`${category.title} Category`);
+        };
+
+        catSubcategories.innerHTML = category.subcategories
+          .map((sub) => `<span class="subcategory-pill">${escapeHtml(sub)}</span>`)
+          .join("");
+
+        catProductsGrid.innerHTML = category.products
+          .map(
+            (prod, idx) => `
+            <article class="product-card">
+              <div>
+                <span class="product-badge">${escapeHtml(prod.subcategory)}</span>
+                <h3 class="product-title">${escapeHtml(prod.name)}</h3>
+                <p class="product-desc">${escapeHtml(prod.description)}</p>
+                <div class="product-meta">
+                  <strong>Packaging:</strong> ${escapeHtml(prod.packaging)}
+                </div>
+              </div>
+              <div class="product-actions">
+                <button type="button" class="btn btn-secondary" data-prod-detail="${idx}">
+                  View Details
+                </button>
+                <button type="button" class="btn btn-whatsapp" data-prod-wa="${idx}">
+                  WhatsApp Inquiry
+                </button>
+              </div>
+            </article>
+          `
+          )
+          .join("");
+
+        // Attach handlers to newly rendered product cards
+        catProductsGrid.querySelectorAll("[data-prod-detail]").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const index = parseInt(btn.getAttribute("data-prod-detail"), 10);
+            openProductDetailModal(category.products[index]);
+          });
+        });
+
+        catProductsGrid.querySelectorAll("[data-prod-wa]").forEach((btn) => {
+          btn.addEventListener("click", function () {
+            const index = parseInt(btn.getAttribute("data-prod-wa"), 10);
+            const prod = category.products[index];
+            openCompanyWhatsApp(`${category.title} (${prod.name})`);
+          });
+        });
+
+        homeView.classList.add("view-hidden");
+        notFoundView.classList.add("view-hidden");
+        categoryView.classList.remove("view-hidden");
+        updateActiveNav("categories");
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      }
+
+      function handleRoute() {
+        const hash = window.location.hash || "#home";
+
+        // Close mobile menu on route change
+        mainNav.classList.remove("open");
+        mobileMenuBtn.setAttribute("aria-expanded", "false");
+
+        if (hash.startsWith("#category/")) {
+          const slug = hash.replace("#category/", "").trim().toLowerCase();
+          renderCategoryView(slug);
+          return;
+        }
+
+        // Show Home View for #home or section anchors
+        categoryView.classList.add("view-hidden");
+        notFoundView.classList.add("view-hidden");
+        homeView.classList.remove("view-hidden");
+
+        const sectionId = hash.replace("#", "");
+        if (sectionId && sectionId !== "home") {
+          const targetEl = document.getElementById(sectionId);
+          if (targetEl) {
+            updateActiveNav(sectionId);
+            setTimeout(() => {
+              targetEl.scrollIntoView({ behavior: "smooth" });
+            }, 30);
+            return;
+          }
+        }
+
+        updateActiveNav("home");
+        if (hash === "#home") {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        }
+      }
+
+      function updateActiveNav(activeKey) {
+        document.querySelectorAll(".nav-link").forEach((link) => {
+          const key = link.getAttribute("data-nav");
+          if (key === activeKey) {
+            link.classList.add("active");
+          } else {
+            link.classList.remove("active");
+          }
+        });
+      }
+
+      /* ----------------------------------------------------------------------
+         8. GLOBAL EVENT LISTENERS & INITIALIZATION
+      ---------------------------------------------------------------------- */
+      const mobileMenuBtn = document.getElementById("mobileMenuBtn");
+      const mainNav = document.getElementById("mainNav");
+
+      mobileMenuBtn.addEventListener("click", function () {
+        const isOpen = mainNav.classList.toggle("open");
+        mobileMenuBtn.setAttribute("aria-expanded", String(isOpen));
+      });
+
+      // Delegate general WhatsApp inquiry buttons
+      document.addEventListener("click", function (e) {
+        const waTrigger = e.target.closest("[data-wa-inquiry]");
+        if (waTrigger) {
+          const subject = waTrigger.getAttribute("data-wa-inquiry");
+          openCompanyWhatsApp(subject);
+        }
+      });
+
+      function escapeHtml(str) {
+        return String(str)
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      // Dynamic Copyright Year
+      document.getElementById("currentYear").textContent = new Date().getFullYear();
+
+      // Initialize Views & Routing
+      renderHomepageCategories();
+      window.addEventListener("hashchange", handleRoute);
+      handleRoute();
+    })();
+  </script>
+</body>
+</html>
